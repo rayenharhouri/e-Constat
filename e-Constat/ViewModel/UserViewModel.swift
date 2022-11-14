@@ -55,8 +55,62 @@ class UserViewModel: ObservableObject {
                     print(error)
                 }
             }
-        
     }
+    
+    func SendVerification(email: String) {
+        let parametres: [String: Any] = [
+            "email": email,
+        ]
+        AF.request("http://127.0.0.1:3000/user/send-confirmation-email" , method: .post,parameters:parametres ,encoding: JSONEncoding.default)
+            .validate(statusCode: 200..<300)
+            .validate(contentType: ["application/json"])
+            .responseData {
+                response in
+                switch response.result {
+                case .success:
+                    print("success")
+                case let .failure(error):
+                    print(error)
+                }
+            }
+    }
+    func SendOTP(email: String) {
+        let parametres: [String: Any] = [
+            "email": email,
+        ]
+        AF.request("http://127.0.0.1:3000/user/forgotPassword" , method: .post,parameters:parametres ,encoding: JSONEncoding.default)
+            .validate(statusCode: 200..<300)
+            .validate(contentType: ["application/json"])
+            .responseData {
+                response in
+                switch response.result {
+                case .success:
+                    print("success")
+                case let .failure(error):
+                    print(error)
+                }
+            }
+    }
+    
+    func confirmOTP(otp: String) {
+        let parametres: [String: Any] = [
+            "otp": otp,
+        ]
+        AF.request("http://127.0.0.1:3000/user/confirmationOtp" , method: .post,parameters:parametres ,encoding: JSONEncoding.default)
+            .validate(statusCode: 200..<300)
+            .validate(contentType: ["application/json"])
+            .responseData {
+                response in
+                switch response.result {
+                case .success:
+                    print("success")
+                case let .failure(error):
+                    print(error)
+                }
+            }
+    }
+    
+    
 
 }
 
