@@ -7,31 +7,80 @@
 
 import Foundation
 import Alamofire
+import SwiftyJSON
+
 
 class UserViewModel: ObservableObject {
 
     static let sharedInstance = UserViewModel()
     
-    func LogIn(email: String,password: String) {
+    //login
+    func LogIn(email: String,password: String,completed: @escaping (Bool, Any?) -> Void) {
         let parametres: [String: Any] = [
-            "email": email,
-            "password": password
-        ]
-        AF.request("http://127.0.0.1:3000/user/login" , method: .post,parameters: parametres,encoding: JSONEncoding.default)
-            .responseJSON {
-                (response) in
+                    "email": email,
+                    "password": password
+                ]
+            AF.request("http://127.0.0.1:3000/user/login",
+                   method: .post,
+                   parameters: parametres,encoding: JSONEncoding.default)
+            .validate(statusCode: 200..<300)
+            .validate(contentType: ["application/json"])
+            .responseData { response in
                 switch response.result {
-                case .success(let JSON):
-                    print("success \(JSON)")
-                case .failure(let error):
-                    print("request failed \(error)")
+                case .success:
+                    let jsonData = JSON(response.data!)
+                    let token = self.getUserToken(jsonItem: jsonData["token"])
+                    let utilisateur = self.makeItem(jsonItem: jsonData["user"])
+                    print("Meeeeeeeeena")
+                    print(token)
+                    print("Meeeeeeeeena")
+                    print("leeeeeeeeena")
+                    print(utilisateur)
+                    print("leeeeeeeeena")
+                    
+                    //UserDefaults.standard.setValue(.stringValue, forKey: "tokenConnexion")
+                    //UserDefaults.standard.setValue(utilisateur._id, forKey: "idUtilisateur")
+                    UserDefaults.standard.setValue(token, forKey: "userToken")
+                    print(utilisateur)
+                    //let jsonData = JSON
+                    completed(true,utilisateur)
+                    print(completed)
+                case let .failure(error):
+                    debugPrint(error)
+                    completed(false, nil)
+                    print("/////////////////////")
+                    print(error)
+                    
                 }
             }
-        print("email : ",email)
-        print("password",password)
-            
     }
     
+    //GetUserData
+    func getProfil() {
+        let Token = UserDefaults.standard.object(forKey: "userToken") as! String
+        let parametres: [String: Any] = [
+                    "token": Token
+                ]
+        AF.request("http://127.0.0.1:3000/user/userProfil", method: .post,
+                   parameters: parametres,encoding: JSONEncoding.default)
+            .validate(statusCode: 200..<300)
+            .validate(contentType: ["application/json"])
+            .responseData {
+                response in
+                switch response.result {
+                case .success:
+                    print("success")
+                    let jsonData = JSON(response.data!)
+                    let utilisateur = self.makeItem(jsonItem: jsonData["user"])
+                    UserDefaults.standard.set(utilisateur, forKey: "utilisateur")
+                    print(utilisateur)
+                case let .failure(error):
+                    print(error)
+                }
+            }
+    }
+    
+    //SignUp
     func SignUp(user: User) {
         let parametres: [String: Any] = [
             "name": user.name,
@@ -57,6 +106,8 @@ class UserViewModel: ObservableObject {
             }
     }
     
+    
+    //SendVerification
     func SendVerification(email: String) {
         let parametres: [String: Any] = [
             "email": email,
@@ -74,7 +125,10 @@ class UserViewModel: ObservableObject {
                 }
             }
     }
-    func SendOTP(email: String) {
+    
+    
+    //sendOTP
+    func SendOTP(email: String,completed: @escaping (Bool, Any?) -> Void) {
         let parametres: [String: Any] = [
             "email": email,
         ]
@@ -85,14 +139,19 @@ class UserViewModel: ObservableObject {
                 response in
                 switch response.result {
                 case .success:
+                    completed(true,email)
                     print("success")
                 case let .failure(error):
+                    completed(false,nil)
                     print(error)
+                  
                 }
             }
     }
     
-    func confirmOTP(otp: String) {
+    
+    //ConfirmOTP
+    func confirmOTP(otp: String,completed: @escaping (Bool, Any?) -> Void) {
         let parametres: [String: Any] = [
             "otp": otp,
         ]
@@ -104,13 +163,74 @@ class UserViewModel: ObservableObject {
                 switch response.result {
                 case .success:
                     print("success")
+                    completed(true,nil)
                 case let .failure(error):
                     print(error)
+                    completed(false,nil)
                 }
             }
     }
     
+    func updatePassword(newPassword: String,newPasswordConfirm:String,email:String ,completed: @escaping (Bool, Any?) -> Void) {
+        let parametres: [String: Any] = [
+            "email" : email,
+            "newPassword": newPassword,
+            "newPasswordConfirm" : newPasswordConfirm
+        ]
+        AF.request("http://127.0.0.1:3000/user/updatePassword" , method: .put,parameters:parametres ,encoding: JSONEncoding.default)
+            .validate(statusCode: 200..<300)
+            .validate(contentType: ["application/json"])
+            .responseData {
+                response in
+                switch response.result {
+                case .success:
+                    print("success")
+                    completed(true,nil)
+                case let .failure(error):
+                    print(error)
+                    completed(false,nil)
+                }
+            }
+    }
     
-
+    func makeItem(jsonItem: JSON) -> User {
+        return User(
+            _id: jsonItem["_id"].stringValue,
+            name: jsonItem["name"].stringValue,
+            password: jsonItem["password"].stringValue,
+            email: jsonItem["email"].stringValue,
+            lastName: jsonItem["lastName"].stringValue,
+            number: jsonItem["number"].intValue,
+            driverLicense: jsonItem["driverLicense"].stringValue,
+            delevredOn: "02-02-2020",
+            adress: jsonItem["adress"].stringValue,
+            verified: jsonItem["verified"].boolValue
+        )
+    }
+    func getUserToken(jsonItem: JSON) -> String {
+        return jsonItem["token"].stringValue
+    }
+    
+    
+    
+    func authGoogle(completed: @escaping (Bool, Any?) -> Void) {
+        AF.request("http://127.0.0.1:3000/auth/google" , method: .post)
+            .validate(statusCode: 200..<300)
+            .validate(contentType: ["application/json"])
+            .responseData {
+                response in
+                switch response.result {
+                case .success:
+                    print("success")
+                    completed(true,nil)
+                case let .failure(error):
+                    print(error)
+                    completed(false,nil)
+                }
+            }
+        
+        
+        
+    }
 }
 

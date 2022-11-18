@@ -7,8 +7,9 @@
 
 import Foundation
 
-struct User {
+struct User: Codable {
     
+    var _id : String?
     var name : String
     var lastName : String
     var password : String
@@ -17,8 +18,10 @@ struct User {
     var driverLicense : String
     var delevredOn : String
     var number: Int
+    var verified: Bool?
     
-    init(name: String, password: String, email: String, lastName: String,number: Int,driverLicense: String,delevredOn: String,adress:String) {
+    init(_id : String? = nil,name: String, password: String, email: String, lastName: String,number: Int,driverLicense: String,delevredOn: String,adress:String,verified: Bool?) {
+        self._id = _id
         self.name = name
         self.password = password
         self.email = email
@@ -27,6 +30,7 @@ struct User {
         self.driverLicense = driverLicense
         self.delevredOn = delevredOn
         self.adress = adress
+        self.verified = verified
     }
-    
+
 }

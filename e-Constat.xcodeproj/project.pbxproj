@@ -17,7 +17,16 @@
 		135F110C291E9EF200FA1108 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 135F110B291E9EF200FA1108 /* Alamofire */; };
 		135F1111291E9FED00FA1108 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135F1110291E9FED00FA1108 /* User.swift */; };
 		135F1113291EA06D00FA1108 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135F1112291EA06D00FA1108 /* UserViewModel.swift */; };
-		135F1115291EA95F00FA1108 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135F1114291EA95F00FA1108 /* UserController.swift */; };
+		138B85572923D9A300E4C3C7 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 138B85562923D9A300E4C3C7 /* SwiftyJSON */; };
+		13B223472923C4D900258B2E /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B223462923C4D900258B2E /* Utilities.swift */; };
+		13B223492923CF7000258B2E /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B223482923CF7000258B2E /* LoadingScreen.swift */; };
+		13B2234B2923D17C00258B2E /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B2234A2923D17C00258B2E /* Alert.swift */; };
+		13CB408A2927BD66006B5665 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CB40892927BD66006B5665 /* loginViewController.swift */; };
+		13CB408C2927BEB2006B5665 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CB408B2927BEB2006B5665 /* SignUpViewController.swift */; };
+		13CB408E2927BFEC006B5665 /* ForgetPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CB408D2927BFEC006B5665 /* ForgetPassViewController.swift */; };
+		13CB40902927C065006B5665 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CB408F2927C065006B5665 /* OTPViewController.swift */; };
+		13CB40922927C0A4006B5665 /* ChangePassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CB40912927C0A4006B5665 /* ChangePassViewController.swift */; };
+		13CB40942927CC1E006B5665 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CB40932927CC1E006B5665 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +41,15 @@
 		135F1104291E9D3A00FA1108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		135F1110291E9FED00FA1108 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		135F1112291EA06D00FA1108 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
-		135F1114291EA95F00FA1108 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		13B223462923C4D900258B2E /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		13B223482923CF7000258B2E /* LoadingScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadingScreen.swift; path = "../../../../Chicky-ios/Chicky/Utilities/LoadingScreen.swift"; sourceTree = "<group>"; };
+		13B2234A2923D17C00258B2E /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Alert.swift; path = "../../../../Chicky-ios/Chicky/Utilities/Alert.swift"; sourceTree = "<group>"; };
+		13CB40892927BD66006B5665 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		13CB408B2927BEB2006B5665 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		13CB408D2927BFEC006B5665 /* ForgetPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPassViewController.swift; sourceTree = "<group>"; };
+		13CB408F2927C065006B5665 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
+		13CB40912927C0A4006B5665 /* ChangePassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePassViewController.swift; sourceTree = "<group>"; };
+		13CB40932927CC1E006B5665 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				138B85572923D9A300E4C3C7 /* SwiftyJSON in Frameworks */,
 				135F110C291E9EF200FA1108 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,12 +84,13 @@
 		135F10F2291E9D3900FA1108 /* e-Constat */ = {
 			isa = PBXGroup;
 			children = (
+				13B223452923C4C700258B2E /* Utilities */,
 				135F110F291E9FDB00FA1108 /* Model */,
 				135F110E291E9FC400FA1108 /* ViewModel */,
 				135F110D291E9FBA00FA1108 /* View */,
 				135F10F3291E9D3900FA1108 /* AppDelegate.swift */,
-				135F10F5291E9D3900FA1108 /* SceneDelegate.swift */,
 				135F10F7291E9D3900FA1108 /* ViewController.swift */,
+				135F10F5291E9D3900FA1108 /* SceneDelegate.swift */,
 				135F10F9291E9D3900FA1108 /* Main.storyboard */,
 				135F10FF291E9D3A00FA1108 /* Assets.xcassets */,
 				135F1101291E9D3A00FA1108 /* LaunchScreen.storyboard */,
@@ -84,7 +103,12 @@
 		135F110D291E9FBA00FA1108 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				135F1114291EA95F00FA1108 /* UserController.swift */,
+				13CB40892927BD66006B5665 /* loginViewController.swift */,
+				13CB408B2927BEB2006B5665 /* SignUpViewController.swift */,
+				13CB408D2927BFEC006B5665 /* ForgetPassViewController.swift */,
+				13CB408F2927C065006B5665 /* OTPViewController.swift */,
+				13CB40912927C0A4006B5665 /* ChangePassViewController.swift */,
+				13CB40932927CC1E006B5665 /* ProfileViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -105,6 +129,16 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		13B223452923C4C700258B2E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				13B2234A2923D17C00258B2E /* Alert.swift */,
+				13B223482923CF7000258B2E /* LoadingScreen.swift */,
+				13B223462923C4D900258B2E /* Utilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,6 +157,7 @@
 			name = "e-Constat";
 			packageProductDependencies = (
 				135F110B291E9EF200FA1108 /* Alamofire */,
+				138B85562923D9A300E4C3C7 /* SwiftyJSON */,
 			);
 			productName = "e-Constat";
 			productReference = 135F10F0291E9D3900FA1108 /* e-Constat.app */;
@@ -154,6 +189,7 @@
 			mainGroup = 135F10E7291E9D3900FA1108;
 			packageReferences = (
 				135F110A291E9EF200FA1108 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				138B85552923D9A300E4C3C7 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 			);
 			productRefGroup = 135F10F1291E9D3900FA1108 /* Products */;
 			projectDirPath = "";
@@ -182,13 +218,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13CB40922927C0A4006B5665 /* ChangePassViewController.swift in Sources */,
 				135F10F8291E9D3900FA1108 /* ViewController.swift in Sources */,
+				13CB408A2927BD66006B5665 /* loginViewController.swift in Sources */,
 				135F1113291EA06D00FA1108 /* UserViewModel.swift in Sources */,
 				135F10F4291E9D3900FA1108 /* AppDelegate.swift in Sources */,
+				13CB408E2927BFEC006B5665 /* ForgetPassViewController.swift in Sources */,
 				135F10FE291E9D3900FA1108 /* e_Constat.xcdatamodeld in Sources */,
-				135F1115291EA95F00FA1108 /* UserController.swift in Sources */,
+				13CB408C2927BEB2006B5665 /* SignUpViewController.swift in Sources */,
 				135F1111291E9FED00FA1108 /* User.swift in Sources */,
+				13B223472923C4D900258B2E /* Utilities.swift in Sources */,
 				135F10F6291E9D3900FA1108 /* SceneDelegate.swift in Sources */,
+				13B2234B2923D17C00258B2E /* Alert.swift in Sources */,
+				13CB40942927CC1E006B5665 /* ProfileViewController.swift in Sources */,
+				13CB40902927C065006B5665 /* OTPViewController.swift in Sources */,
+				13B223492923CF7000258B2E /* LoadingScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +458,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		138B85552923D9A300E4C3C7 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -421,6 +473,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 135F110A291E9EF200FA1108 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		138B85562923D9A300E4C3C7 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 138B85552923D9A300E4C3C7 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
 		};
 /* End XCSwiftPackageProductDependency section */
 
