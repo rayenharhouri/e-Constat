@@ -21,6 +21,16 @@
 		13B223472923C4D900258B2E /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B223462923C4D900258B2E /* Utilities.swift */; };
 		13B223492923CF7000258B2E /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B223482923CF7000258B2E /* LoadingScreen.swift */; };
 		13B2234B2923D17C00258B2E /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B2234A2923D17C00258B2E /* Alert.swift */; };
+		13BB13D2292B89CB004F7FF6 /* FormulaireP1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BB13D1292B89CB004F7FF6 /* FormulaireP1ViewController.swift */; };
+		13BB13D4292B8A98004F7FF6 /* FormulaireP2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BB13D3292B8A98004F7FF6 /* FormulaireP2ViewController.swift */; };
+		13BB13D6292BACE1004F7FF6 /* FormulaireP3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BB13D5292BACE1004F7FF6 /* FormulaireP3ViewController.swift */; };
+		13BB13D8292BB7D8004F7FF6 /* FormulaireP4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BB13D7292BB7D8004F7FF6 /* FormulaireP4ViewController.swift */; };
+		13BB13DB292BC1D9004F7FF6 /* FormulaireP5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BB13DA292BC1D9004F7FF6 /* FormulaireP5ViewController.swift */; };
+		13BB13DD292BCABE004F7FF6 /* FormulaireP6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BB13DC292BCABE004F7FF6 /* FormulaireP6ViewController.swift */; };
+		13BB13DF292BCD65004F7FF6 /* FormulaireP7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BB13DE292BCD65004F7FF6 /* FormulaireP7ViewController.swift */; };
+		13C330D029293A0300D3DC6B /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C330CF29293A0300D3DC6B /* CarViewController.swift */; };
+		13C330D229293E7500D3DC6B /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C330D129293E7500D3DC6B /* HistoryViewController.swift */; };
+		13C330D429293E9000D3DC6B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C330D329293E9000D3DC6B /* HomeViewController.swift */; };
 		13CB408A2927BD66006B5665 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CB40892927BD66006B5665 /* loginViewController.swift */; };
 		13CB408C2927BEB2006B5665 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CB408B2927BEB2006B5665 /* SignUpViewController.swift */; };
 		13CB408E2927BFEC006B5665 /* ForgetPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CB408D2927BFEC006B5665 /* ForgetPassViewController.swift */; };
@@ -44,6 +54,16 @@
 		13B223462923C4D900258B2E /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		13B223482923CF7000258B2E /* LoadingScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadingScreen.swift; path = "../../../../Chicky-ios/Chicky/Utilities/LoadingScreen.swift"; sourceTree = "<group>"; };
 		13B2234A2923D17C00258B2E /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Alert.swift; path = "../../../../Chicky-ios/Chicky/Utilities/Alert.swift"; sourceTree = "<group>"; };
+		13BB13D1292B89CB004F7FF6 /* FormulaireP1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaireP1ViewController.swift; sourceTree = "<group>"; };
+		13BB13D3292B8A98004F7FF6 /* FormulaireP2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaireP2ViewController.swift; sourceTree = "<group>"; };
+		13BB13D5292BACE1004F7FF6 /* FormulaireP3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaireP3ViewController.swift; sourceTree = "<group>"; };
+		13BB13D7292BB7D8004F7FF6 /* FormulaireP4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaireP4ViewController.swift; sourceTree = "<group>"; };
+		13BB13DA292BC1D9004F7FF6 /* FormulaireP5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaireP5ViewController.swift; sourceTree = "<group>"; };
+		13BB13DC292BCABE004F7FF6 /* FormulaireP6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaireP6ViewController.swift; sourceTree = "<group>"; };
+		13BB13DE292BCD65004F7FF6 /* FormulaireP7ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaireP7ViewController.swift; sourceTree = "<group>"; };
+		13C330CF29293A0300D3DC6B /* CarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewController.swift; sourceTree = "<group>"; };
+		13C330D129293E7500D3DC6B /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		13C330D329293E9000D3DC6B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		13CB40892927BD66006B5665 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		13CB408B2927BEB2006B5665 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		13CB408D2927BFEC006B5665 /* ForgetPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPassViewController.swift; sourceTree = "<group>"; };
@@ -103,12 +123,16 @@
 		135F110D291E9FBA00FA1108 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				13BB13D9292BC146004F7FF6 /* Formulaire */,
 				13CB40892927BD66006B5665 /* loginViewController.swift */,
 				13CB408B2927BEB2006B5665 /* SignUpViewController.swift */,
 				13CB408D2927BFEC006B5665 /* ForgetPassViewController.swift */,
 				13CB408F2927C065006B5665 /* OTPViewController.swift */,
 				13CB40912927C0A4006B5665 /* ChangePassViewController.swift */,
 				13CB40932927CC1E006B5665 /* ProfileViewController.swift */,
+				13C330D129293E7500D3DC6B /* HistoryViewController.swift */,
+				13C330D329293E9000D3DC6B /* HomeViewController.swift */,
+				13C330CF29293A0300D3DC6B /* CarViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -137,6 +161,20 @@
 				13B223462923C4D900258B2E /* Utilities.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		13BB13D9292BC146004F7FF6 /* Formulaire */ = {
+			isa = PBXGroup;
+			children = (
+				13BB13D1292B89CB004F7FF6 /* FormulaireP1ViewController.swift */,
+				13BB13D3292B8A98004F7FF6 /* FormulaireP2ViewController.swift */,
+				13BB13D5292BACE1004F7FF6 /* FormulaireP3ViewController.swift */,
+				13BB13D7292BB7D8004F7FF6 /* FormulaireP4ViewController.swift */,
+				13BB13DA292BC1D9004F7FF6 /* FormulaireP5ViewController.swift */,
+				13BB13DC292BCABE004F7FF6 /* FormulaireP6ViewController.swift */,
+				13BB13DE292BCD65004F7FF6 /* FormulaireP7ViewController.swift */,
+			);
+			path = Formulaire;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,18 +258,28 @@
 			files = (
 				13CB40922927C0A4006B5665 /* ChangePassViewController.swift in Sources */,
 				135F10F8291E9D3900FA1108 /* ViewController.swift in Sources */,
+				13BB13DB292BC1D9004F7FF6 /* FormulaireP5ViewController.swift in Sources */,
 				13CB408A2927BD66006B5665 /* loginViewController.swift in Sources */,
+				13BB13DD292BCABE004F7FF6 /* FormulaireP6ViewController.swift in Sources */,
+				13BB13D2292B89CB004F7FF6 /* FormulaireP1ViewController.swift in Sources */,
 				135F1113291EA06D00FA1108 /* UserViewModel.swift in Sources */,
 				135F10F4291E9D3900FA1108 /* AppDelegate.swift in Sources */,
+				13BB13D8292BB7D8004F7FF6 /* FormulaireP4ViewController.swift in Sources */,
+				13C330D429293E9000D3DC6B /* HomeViewController.swift in Sources */,
 				13CB408E2927BFEC006B5665 /* ForgetPassViewController.swift in Sources */,
 				135F10FE291E9D3900FA1108 /* e_Constat.xcdatamodeld in Sources */,
+				13BB13DF292BCD65004F7FF6 /* FormulaireP7ViewController.swift in Sources */,
+				13C330D029293A0300D3DC6B /* CarViewController.swift in Sources */,
 				13CB408C2927BEB2006B5665 /* SignUpViewController.swift in Sources */,
 				135F1111291E9FED00FA1108 /* User.swift in Sources */,
 				13B223472923C4D900258B2E /* Utilities.swift in Sources */,
 				135F10F6291E9D3900FA1108 /* SceneDelegate.swift in Sources */,
 				13B2234B2923D17C00258B2E /* Alert.swift in Sources */,
 				13CB40942927CC1E006B5665 /* ProfileViewController.swift in Sources */,
+				13BB13D6292BACE1004F7FF6 /* FormulaireP3ViewController.swift in Sources */,
+				13BB13D4292B8A98004F7FF6 /* FormulaireP2ViewController.swift in Sources */,
 				13CB40902927C065006B5665 /* OTPViewController.swift in Sources */,
+				13C330D229293E7500D3DC6B /* HistoryViewController.swift in Sources */,
 				13B223492923CF7000258B2E /* LoadingScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

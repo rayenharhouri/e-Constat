@@ -72,8 +72,17 @@ class UserViewModel: ObservableObject {
                     print("success")
                     let jsonData = JSON(response.data!)
                     let utilisateur = self.makeItem(jsonItem: jsonData["user"])
-                    UserDefaults.standard.set(utilisateur, forKey: "utilisateur")
-                    print(utilisateur)
+                    
+                    
+                     do {
+                         let encoder = JSONEncoder()
+                         
+                         let data = try encoder.encode(utilisateur)
+                         UserDefaults.standard.setValue(data, forKey: "utilisateur")
+                         
+                     } catch {
+                         print("Unable to encode")
+                     }
                 case let .failure(error):
                     print(error)
                 }

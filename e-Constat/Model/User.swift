@@ -33,4 +33,12 @@ struct User: Codable {
         self.verified = verified
     }
 
+   
+    
+    
+    
 }
+
+
+
+
