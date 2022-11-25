@@ -11,9 +11,9 @@ class loginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+        //UserDefaults.standard.object(forKey: "userToken") as! String
+        
+        }
     
     //function
     //OUTLET Login

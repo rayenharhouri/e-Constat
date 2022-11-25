@@ -37,12 +37,8 @@ class UserViewModel: ObservableObject {
                     print("leeeeeeeeena")
                     print(utilisateur)
                     print("leeeeeeeeena")
-                    
-                    //UserDefaults.standard.setValue(.stringValue, forKey: "tokenConnexion")
-                    //UserDefaults.standard.setValue(utilisateur._id, forKey: "idUtilisateur")
                     UserDefaults.standard.setValue(token, forKey: "userToken")
                     print(utilisateur)
-                    //let jsonData = JSON
                     completed(true,utilisateur)
                     print(completed)
                 case let .failure(error):
@@ -57,6 +53,7 @@ class UserViewModel: ObservableObject {
     
     //GetUserData
     func getProfil() {
+        //Getting the token from userdefault
         let Token = UserDefaults.standard.object(forKey: "userToken") as! String
         let parametres: [String: Any] = [
                     "token": Token
@@ -237,9 +234,32 @@ class UserViewModel: ObservableObject {
                     completed(false,nil)
                 }
             }
-        
-        
-        
+    }
+    
+
+    func updateProfil(name: String,lastName:String,driverLicense:String ,completed: @escaping (Bool, Any?) -> Void) {
+        let Token = UserDefaults.standard.object(forKey: "userToken") as! String
+        let parametres: [String: Any] = [
+                    "token": Token,
+                    "name": name,
+                    "lastName": lastName,
+                    "driverLicense": driverLicense
+                    
+                ]
+        AF.request("http://localhost:3000/user/updateUser" , method: .put,parameters:parametres ,encoding: JSONEncoding.default)
+            .validate(statusCode: 200..<300)
+            .validate(contentType: ["application/json"])
+            .responseData {
+                response in
+                switch response.result {
+                case .success:
+                    print("success")
+                    completed(true,Token)
+                case let .failure(error):
+                    print(error)
+                    completed(false,nil)
+                }
+            }
     }
 }
 

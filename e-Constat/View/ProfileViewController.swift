@@ -8,7 +8,6 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
-      
     var name : String = ""
     var lastName : String = ""
     var password : String = ""
@@ -28,11 +27,12 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var lastNameOutlet: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.viewControllers.remove(at: 1)
-        navigationController?.viewControllers.remove(at: 0)
+        //Storing the token in userdefault
         let Token = UserDefaults.standard.object(forKey: "userToken") as! String
         print(Token)
         UserViewModel().getProfil()
+        
+        //Decoding json and storing user information in userdefault
        if  let data = UserDefaults.standard.data(forKey: "utilisateur")
         {
         do {
@@ -41,19 +41,15 @@ class ProfileViewController: UIViewController {
             name = user.name
             lastName = user.lastName
             email = user.email
+            password = user.password
             adress = user.adress
             number = user.number
             driverLicense = user.driverLicense
             delevredOn = user.delevredOn
         } catch {
             print("Unable to decode")
-        }
+             }
        }
-        print(name)
-        print(lastName)
-        print(email)
-        print(adress)
-        print(driverLicense)
         self.nameOutlet.isUserInteractionEnabled = false
         self.driverLicenseOutlet.isUserInteractionEnabled = false
         self.lastNameOutlet.isUserInteractionEnabled = false
@@ -61,14 +57,10 @@ class ProfileViewController: UIViewController {
         lastNameOutlet.text = lastName
         emailOutlet.text = email
         driverLicenseOutlet.text = driverLicense
-       
-      
     }
     
-    @IBAction func editAction(_ sender: Any) {
-        
-    }
-    
+   
+    //Logic of Enable editing and disabling
     @IBAction func nameEdit(_ sender: Any) {
         if (self.nameOutlet.isUserInteractionEnabled == false) {
             self.nameOutlet.isUserInteractionEnabled = true
@@ -78,6 +70,7 @@ class ProfileViewController: UIViewController {
             self.nameOutlet.isUserInteractionEnabled = false
         }
     }
+    //Logic of Enable editing and disabling
     @IBAction func lastNameEdit(_ sender: Any) {
         if (self.lastNameOutlet.isUserInteractionEnabled == false) {
             editLNB.tintColor = UIColor.blue
@@ -87,7 +80,18 @@ class ProfileViewController: UIViewController {
             self.lastNameOutlet.isUserInteractionEnabled = false
         }
     }
+    //Logic of Enable editing and disabling
+    @IBAction func editAction(_ sender: Any) {
+        UserViewModel().updateProfil(name: nameOutlet.text!, lastName: lastNameOutlet.text!, driverLicense: driverLicenseOutlet.text!,completed: { (success, reponse) in
+            if success {
+                self.present(Alert.makeAlert(titre: "Done", message: "User Updated"), animated: true)
+            } else {
+                self.present(Alert.makeAlert(titre: "Warning", message: "Wrong Informations"), animated: true)
+            }
+        })
+    }
     
+    //Logic of Enable editing and disabling
     @IBAction func driverLedit(_ sender: Any) {
         if (self.driverLicenseOutlet.isUserInteractionEnabled == false) {
             editDLB.tintColor = UIColor.blue
@@ -97,5 +101,7 @@ class ProfileViewController: UIViewController {
             self.driverLicenseOutlet.isUserInteractionEnabled = false
         }
     }
+    
+    
     
 }

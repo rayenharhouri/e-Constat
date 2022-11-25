@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		135E826E2930EC7C00AADA26 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135E826D2930EC7C00AADA26 /* Car.swift */; };
+		135E82702930EDCB00AADA26 /* CarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135E826F2930EDCB00AADA26 /* CarViewModel.swift */; };
+		135E82722930F70D00AADA26 /* NewCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135E82712930F70D00AADA26 /* NewCarViewController.swift */; };
+		135E82782930F9C700AADA26 /* FormCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135E82772930F9C700AADA26 /* FormCarViewController.swift */; };
 		135F10F4291E9D3900FA1108 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135F10F3291E9D3900FA1108 /* AppDelegate.swift */; };
 		135F10F6291E9D3900FA1108 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135F10F5291E9D3900FA1108 /* SceneDelegate.swift */; };
 		135F10F8291E9D3900FA1108 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135F10F7291E9D3900FA1108 /* ViewController.swift */; };
@@ -40,6 +44,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		135E826D2930EC7C00AADA26 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		135E826F2930EDCB00AADA26 /* CarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewModel.swift; sourceTree = "<group>"; };
+		135E82712930F70D00AADA26 /* NewCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCarViewController.swift; sourceTree = "<group>"; };
+		135E82772930F9C700AADA26 /* FormCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormCarViewController.swift; sourceTree = "<group>"; };
 		135F10F0291E9D3900FA1108 /* e-Constat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "e-Constat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		135F10F3291E9D3900FA1108 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		135F10F5291E9D3900FA1108 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +93,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		135E82752930F95600AADA26 /* Car */ = {
+			isa = PBXGroup;
+			children = (
+				13C330CF29293A0300D3DC6B /* CarViewController.swift */,
+				135E82712930F70D00AADA26 /* NewCarViewController.swift */,
+				135E82772930F9C700AADA26 /* FormCarViewController.swift */,
+			);
+			name = Car;
+			sourceTree = "<group>";
+		};
+		135E82762930F97600AADA26 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				13CB40892927BD66006B5665 /* loginViewController.swift */,
+				13CB408B2927BEB2006B5665 /* SignUpViewController.swift */,
+				13CB408D2927BFEC006B5665 /* ForgetPassViewController.swift */,
+				13CB408F2927C065006B5665 /* OTPViewController.swift */,
+				13CB40912927C0A4006B5665 /* ChangePassViewController.swift */,
+				13CB40932927CC1E006B5665 /* ProfileViewController.swift */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
 		135F10E7291E9D3900FA1108 = {
 			isa = PBXGroup;
 			children = (
@@ -123,16 +154,11 @@
 		135F110D291E9FBA00FA1108 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				135E82762930F97600AADA26 /* User */,
+				135E82752930F95600AADA26 /* Car */,
 				13BB13D9292BC146004F7FF6 /* Formulaire */,
-				13CB40892927BD66006B5665 /* loginViewController.swift */,
-				13CB408B2927BEB2006B5665 /* SignUpViewController.swift */,
-				13CB408D2927BFEC006B5665 /* ForgetPassViewController.swift */,
-				13CB408F2927C065006B5665 /* OTPViewController.swift */,
-				13CB40912927C0A4006B5665 /* ChangePassViewController.swift */,
-				13CB40932927CC1E006B5665 /* ProfileViewController.swift */,
 				13C330D129293E7500D3DC6B /* HistoryViewController.swift */,
 				13C330D329293E9000D3DC6B /* HomeViewController.swift */,
-				13C330CF29293A0300D3DC6B /* CarViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -141,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				135F1112291EA06D00FA1108 /* UserViewModel.swift */,
+				135E826F2930EDCB00AADA26 /* CarViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -149,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				135F1110291E9FED00FA1108 /* User.swift */,
+				135E826D2930EC7C00AADA26 /* Car.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -260,6 +288,9 @@
 				135F10F8291E9D3900FA1108 /* ViewController.swift in Sources */,
 				13BB13DB292BC1D9004F7FF6 /* FormulaireP5ViewController.swift in Sources */,
 				13CB408A2927BD66006B5665 /* loginViewController.swift in Sources */,
+				135E82722930F70D00AADA26 /* NewCarViewController.swift in Sources */,
+				135E82782930F9C700AADA26 /* FormCarViewController.swift in Sources */,
+				135E826E2930EC7C00AADA26 /* Car.swift in Sources */,
 				13BB13DD292BCABE004F7FF6 /* FormulaireP6ViewController.swift in Sources */,
 				13BB13D2292B89CB004F7FF6 /* FormulaireP1ViewController.swift in Sources */,
 				135F1113291EA06D00FA1108 /* UserViewModel.swift in Sources */,
@@ -271,6 +302,7 @@
 				13BB13DF292BCD65004F7FF6 /* FormulaireP7ViewController.swift in Sources */,
 				13C330D029293A0300D3DC6B /* CarViewController.swift in Sources */,
 				13CB408C2927BEB2006B5665 /* SignUpViewController.swift in Sources */,
+				135E82702930EDCB00AADA26 /* CarViewModel.swift in Sources */,
 				135F1111291E9FED00FA1108 /* User.swift in Sources */,
 				13B223472923C4D900258B2E /* Utilities.swift in Sources */,
 				135F10F6291E9D3900FA1108 /* SceneDelegate.swift in Sources */,

@@ -19,7 +19,7 @@ class FormulaireP2ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print(text!)
+        //print(text!)
       
     }
     

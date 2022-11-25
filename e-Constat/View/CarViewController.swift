@@ -7,11 +7,19 @@
 
 import UIKit
 
-class CarViewController: UIViewController {
+class CarViewController: UIViewController ,UICollectionViewDelegate {
+    private let collectionView = UICollectionView(frame: .zero,collectionViewLayout: UICollectionViewLayout())
+    
+    
+
+    
+
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        collectionView.delegate = self
+        view.addSubview(collectionView)
     }
     
   
