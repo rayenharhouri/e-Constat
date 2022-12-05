@@ -7,18 +7,37 @@
 
 import UIKit
 
+
 class loginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         //UserDefaults.standard.object(forKey: "userToken") as! String
-        
+       
         }
     
     //function
     //OUTLET Login
-    @IBOutlet weak var passwordField: UITextField!
-    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!{
+        didSet {
+            passwordField.layer.masksToBounds = true
+            passwordField.layer.cornerRadius = 25
+            passwordField.layer.borderColor = UIColor.link.cgColor
+            passwordField.layer.borderWidth = 1
+            passwordField.backgroundColor = UIColor.systemGray6
+            passwordField.tintColor = UIColor.lightGray
+            passwordField.setIcon(UIImage(named: "password")!)
+        }}
+    @IBOutlet weak var emailField: UITextField!{
+        didSet {
+            emailField.layer.masksToBounds = true
+            emailField.layer.cornerRadius = 25
+            emailField.layer.borderColor = UIColor.link.cgColor
+            emailField.layer.borderWidth = 1
+            emailField.backgroundColor = UIColor.systemGray6
+            emailField.tintColor = UIColor.lightGray
+            emailField.setIcon(UIImage(named: "mail")!)
+        }}
     
     @IBAction func LoginAction(_ sender: Any) {
         UserViewModel().LogIn(email: emailField.text!, password: passwordField.text!,completed: { (success, reponse) in

@@ -44,6 +44,39 @@ class CarViewModel: ObservableObject {
                 }
             }
     }
+    func recupererTout(completed: @escaping (Bool, [Car]?) -> Void) {
+        //Getting the token from userdefault
+        let Token = UserDefaults.standard.object(forKey: "userToken") as! String
+        let parametres: [String: Any] = [
+                    "token": Token
+                ]
+        AF.request("http://127.0.0.1:3000/car/allCars", method: .post,
+                   parameters: parametres,encoding: JSONEncoding.default)
+            .validate(statusCode: 200..<300)
+            .validate(contentType: ["application/json"])
+            .responseData {
+                response in
+                switch response.result {
+                case .success:
+                    var cars : [Car]? = []
+                    for singleJsonItem in JSON(response.data!){
+                        cars!.append(self.makeCar(jsonItem: singleJsonItem.1))
+                        print("================")
+                        print(singleJsonItem)
+                        print("================")
+                    }
+                    print("================")
+                    print(cars)
+                    print("================")
+                    completed(true, cars)
+                    print("success")
+                    
+                    
+                case let .failure(error):
+                    print(error)
+                }
+            }
+    }
     func makeCar(jsonItem: JSON) -> Car {
         return Car(
             _id: jsonItem["_id"].stringValue,

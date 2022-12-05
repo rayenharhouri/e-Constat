@@ -103,5 +103,16 @@ class ProfileViewController: UIViewController {
     }
     
     
+   
+    
+    @IBAction func LogOut(_ sender: Any) {
+        let Token = UserDefaults.standard.object(forKey: "userToken") as! String
+        print(Token)
+        UserViewModel().Logout()
+        let vclogin = storyboard?.instantiateViewController(identifier: "loginID") as! loginViewController
+       
+        self.navigationController?.pushViewController(vclogin, animated: true)
+       
+    }
     
 }

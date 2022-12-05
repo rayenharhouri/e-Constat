@@ -18,21 +18,23 @@ class SignUpViewController: UIViewController {
         didSet {
             firstNameSTF.layer.masksToBounds = true
             firstNameSTF.layer.cornerRadius = 25
+            firstNameSTF.layer.borderColor = UIColor.link.cgColor
             firstNameSTF.layer.borderWidth = 1
             firstNameSTF.backgroundColor = UIColor.systemGray6
             firstNameSTF.tintColor = UIColor.lightGray
-           // firstNameSTF.setIcon(UIImage(named: "lock")!)
+            firstNameSTF.setIcon(UIImage(named: "user")!)
         }}
     
     
     @IBOutlet weak var lastNameSTF: UITextField!{
         didSet {
             lastNameSTF.layer.masksToBounds = true
+            lastNameSTF.layer.borderColor = UIColor.link.cgColor
             lastNameSTF.layer.cornerRadius = 25
             lastNameSTF.layer.borderWidth = 1
             lastNameSTF.backgroundColor = UIColor.systemGray6
             lastNameSTF.tintColor = UIColor.lightGray
-           // firstNameSTF.setIcon(UIImage(named: "lock")!)
+           lastNameSTF.setIcon(UIImage(named: "user")!)
         }}
     
     
@@ -40,11 +42,12 @@ class SignUpViewController: UIViewController {
         didSet {
             emailSTF.layer.masksToBounds = true
             emailSTF.layer.cornerRadius = 25
+            emailSTF.layer.borderColor = UIColor.link.cgColor
             emailSTF.layer.borderWidth = 1
             emailSTF.backgroundColor = UIColor.systemGray6
             emailSTF.tintColor = UIColor.lightGray
             
-           // firstNameSTF.setIcon(UIImage(named: "lock")!)
+            emailSTF.setIcon(UIImage(named: "mail")!)
         }}
     
     
@@ -52,10 +55,11 @@ class SignUpViewController: UIViewController {
         didSet {
             adressSTF.layer.masksToBounds = true
             adressSTF.layer.cornerRadius = 25
+            adressSTF.layer.borderColor = UIColor.link.cgColor
             adressSTF.layer.borderWidth = 1
             adressSTF.backgroundColor = UIColor.systemGray6
             adressSTF.tintColor = UIColor.lightGray
-           // firstNameSTF.setIcon(UIImage(named: "lock")!)
+           adressSTF.setIcon(UIImage(named: "adress")!)
         }}
     
     
@@ -63,9 +67,11 @@ class SignUpViewController: UIViewController {
         didSet {
             phoneSTF.layer.masksToBounds = true
             phoneSTF.layer.cornerRadius = 25
+            phoneSTF.layer.borderColor = UIColor.link.cgColor
             phoneSTF.layer.borderWidth = 1
             phoneSTF.backgroundColor = UIColor.systemGray6
             phoneSTF.tintColor = UIColor.lightGray
+            phoneSTF.setIcon(UIImage(named: "phone")!)
         }}
     
     
@@ -73,22 +79,24 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var passwordSTF: UITextField!{
         didSet {
             passwordSTF.layer.masksToBounds = true
+            passwordSTF.layer.borderColor = UIColor.link.cgColor
             passwordSTF.layer.cornerRadius = 25
             passwordSTF.layer.borderWidth = 1
             passwordSTF.backgroundColor = UIColor.systemGray6
             passwordSTF.tintColor = UIColor.lightGray
-           // firstNameSTF.setIcon(UIImage(named: "lock")!)
+           passwordSTF.setIcon(UIImage(named: "password")!)
         }}
     
     
     @IBOutlet weak var driverLicenceSTF: UITextField!{
         didSet {
             driverLicenceSTF.layer.masksToBounds = true
+            driverLicenceSTF.layer.borderColor = UIColor.link.cgColor
             driverLicenceSTF.layer.cornerRadius = 25
             driverLicenceSTF.layer.borderWidth = 1
             driverLicenceSTF.backgroundColor = UIColor.systemGray6
             driverLicenceSTF.tintColor = UIColor.lightGray
-            //firstNameSTF.setIcon(UIImage(named: "lock")!)
+            driverLicenceSTF.setIcon(UIImage(named: "driverLicense")!)
         }}
     
     
@@ -114,3 +122,4 @@ class SignUpViewController: UIViewController {
 
 
 }
+

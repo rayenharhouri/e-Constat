@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13513C8D293E7C5500C8177D /* SelectVehiculeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13513C8C293E7C5500C8177D /* SelectVehiculeViewController.swift */; };
+		13513C8F293E832800C8177D /* SelectedTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13513C8E293E832800C8177D /* SelectedTypeViewController.swift */; };
+		1357711F293240FA00EEBFC9 /* SketchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1357711E293240FA00EEBFC9 /* SketchViewController.swift */; };
 		135E826E2930EC7C00AADA26 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135E826D2930EC7C00AADA26 /* Car.swift */; };
 		135E82702930EDCB00AADA26 /* CarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135E826F2930EDCB00AADA26 /* CarViewModel.swift */; };
 		135E82722930F70D00AADA26 /* NewCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135E82712930F70D00AADA26 /* NewCarViewController.swift */; };
@@ -22,6 +25,7 @@
 		135F1111291E9FED00FA1108 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135F1110291E9FED00FA1108 /* User.swift */; };
 		135F1113291EA06D00FA1108 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135F1112291EA06D00FA1108 /* UserViewModel.swift */; };
 		138B85572923D9A300E4C3C7 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 138B85562923D9A300E4C3C7 /* SwiftyJSON */; };
+		13A3E5BB293E5A7000600EDE /* NewInsurnaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A3E5BA293E5A7000600EDE /* NewInsurnaceViewController.swift */; };
 		13B223472923C4D900258B2E /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B223462923C4D900258B2E /* Utilities.swift */; };
 		13B223492923CF7000258B2E /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B223482923CF7000258B2E /* LoadingScreen.swift */; };
 		13B2234B2923D17C00258B2E /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B2234A2923D17C00258B2E /* Alert.swift */; };
@@ -32,6 +36,9 @@
 		13BB13DB292BC1D9004F7FF6 /* FormulaireP5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BB13DA292BC1D9004F7FF6 /* FormulaireP5ViewController.swift */; };
 		13BB13DD292BCABE004F7FF6 /* FormulaireP6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BB13DC292BCABE004F7FF6 /* FormulaireP6ViewController.swift */; };
 		13BB13DF292BCD65004F7FF6 /* FormulaireP7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BB13DE292BCD65004F7FF6 /* FormulaireP7ViewController.swift */; };
+		13BD16F6293A2CF000B9EA5F /* CarDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BD16F5293A2CF000B9EA5F /* CarDetailsViewController.swift */; };
+		13BD16F8293A3E2800B9EA5F /* Insurance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BD16F7293A3E2800B9EA5F /* Insurance.swift */; };
+		13BD16FA293A3F7600B9EA5F /* InsuranceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BD16F9293A3F7600B9EA5F /* InsuranceViewModel.swift */; };
 		13C330D029293A0300D3DC6B /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C330CF29293A0300D3DC6B /* CarViewController.swift */; };
 		13C330D229293E7500D3DC6B /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C330D129293E7500D3DC6B /* HistoryViewController.swift */; };
 		13C330D429293E9000D3DC6B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C330D329293E9000D3DC6B /* HomeViewController.swift */; };
@@ -44,6 +51,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13513C8C293E7C5500C8177D /* SelectVehiculeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectVehiculeViewController.swift; sourceTree = "<group>"; };
+		13513C8E293E832800C8177D /* SelectedTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedTypeViewController.swift; sourceTree = "<group>"; };
+		1357711E293240FA00EEBFC9 /* SketchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchViewController.swift; sourceTree = "<group>"; };
 		135E826D2930EC7C00AADA26 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		135E826F2930EDCB00AADA26 /* CarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewModel.swift; sourceTree = "<group>"; };
 		135E82712930F70D00AADA26 /* NewCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCarViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +69,7 @@
 		135F1104291E9D3A00FA1108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		135F1110291E9FED00FA1108 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		135F1112291EA06D00FA1108 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		13A3E5BA293E5A7000600EDE /* NewInsurnaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewInsurnaceViewController.swift; sourceTree = "<group>"; };
 		13B223462923C4D900258B2E /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		13B223482923CF7000258B2E /* LoadingScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadingScreen.swift; path = "../../../../Chicky-ios/Chicky/Utilities/LoadingScreen.swift"; sourceTree = "<group>"; };
 		13B2234A2923D17C00258B2E /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Alert.swift; path = "../../../../Chicky-ios/Chicky/Utilities/Alert.swift"; sourceTree = "<group>"; };
@@ -69,6 +80,10 @@
 		13BB13DA292BC1D9004F7FF6 /* FormulaireP5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaireP5ViewController.swift; sourceTree = "<group>"; };
 		13BB13DC292BCABE004F7FF6 /* FormulaireP6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaireP6ViewController.swift; sourceTree = "<group>"; };
 		13BB13DE292BCD65004F7FF6 /* FormulaireP7ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaireP7ViewController.swift; sourceTree = "<group>"; };
+		13BD16F5293A2CF000B9EA5F /* CarDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsViewController.swift; sourceTree = "<group>"; };
+		13BD16F7293A3E2800B9EA5F /* Insurance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Insurance.swift; sourceTree = "<group>"; };
+		13BD16F9293A3F7600B9EA5F /* InsuranceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceViewModel.swift; sourceTree = "<group>"; };
+		13BD16FF293A7DBD00B9EA5F /* e-Constat */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "e-Constat"; sourceTree = "<group>"; };
 		13C330CF29293A0300D3DC6B /* CarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewController.swift; sourceTree = "<group>"; };
 		13C330D129293E7500D3DC6B /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		13C330D329293E9000D3DC6B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -93,12 +108,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13513C90293E832B00C8177D /* Type */ = {
+			isa = PBXGroup;
+			children = (
+				13513C8E293E832800C8177D /* SelectedTypeViewController.swift */,
+				13513C8C293E7C5500C8177D /* SelectVehiculeViewController.swift */,
+			);
+			name = Type;
+			sourceTree = "<group>";
+		};
 		135E82752930F95600AADA26 /* Car */ = {
 			isa = PBXGroup;
 			children = (
 				13C330CF29293A0300D3DC6B /* CarViewController.swift */,
 				135E82712930F70D00AADA26 /* NewCarViewController.swift */,
 				135E82772930F9C700AADA26 /* FormCarViewController.swift */,
+				13BD16F5293A2CF000B9EA5F /* CarDetailsViewController.swift */,
 			);
 			name = Car;
 			sourceTree = "<group>";
@@ -119,6 +144,7 @@
 		135F10E7291E9D3900FA1108 = {
 			isa = PBXGroup;
 			children = (
+				13BD16FE293A7DBD00B9EA5F /* Packages */,
 				135F10F2291E9D3900FA1108 /* e-Constat */,
 				135F10F1291E9D3900FA1108 /* Products */,
 			);
@@ -154,6 +180,7 @@
 		135F110D291E9FBA00FA1108 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				13A3E5B9293E5A5100600EDE /* insurance */,
 				135E82762930F97600AADA26 /* User */,
 				135E82752930F95600AADA26 /* Car */,
 				13BB13D9292BC146004F7FF6 /* Formulaire */,
@@ -168,6 +195,7 @@
 			children = (
 				135F1112291EA06D00FA1108 /* UserViewModel.swift */,
 				135E826F2930EDCB00AADA26 /* CarViewModel.swift */,
+				13BD16F9293A3F7600B9EA5F /* InsuranceViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -177,8 +205,17 @@
 			children = (
 				135F1110291E9FED00FA1108 /* User.swift */,
 				135E826D2930EC7C00AADA26 /* Car.swift */,
+				13BD16F7293A3E2800B9EA5F /* Insurance.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		13A3E5B9293E5A5100600EDE /* insurance */ = {
+			isa = PBXGroup;
+			children = (
+				13A3E5BA293E5A7000600EDE /* NewInsurnaceViewController.swift */,
+			);
+			path = insurance;
 			sourceTree = "<group>";
 		};
 		13B223452923C4C700258B2E /* Utilities */ = {
@@ -194,6 +231,7 @@
 		13BB13D9292BC146004F7FF6 /* Formulaire */ = {
 			isa = PBXGroup;
 			children = (
+				13513C90293E832B00C8177D /* Type */,
 				13BB13D1292B89CB004F7FF6 /* FormulaireP1ViewController.swift */,
 				13BB13D3292B8A98004F7FF6 /* FormulaireP2ViewController.swift */,
 				13BB13D5292BACE1004F7FF6 /* FormulaireP3ViewController.swift */,
@@ -201,8 +239,17 @@
 				13BB13DA292BC1D9004F7FF6 /* FormulaireP5ViewController.swift */,
 				13BB13DC292BCABE004F7FF6 /* FormulaireP6ViewController.swift */,
 				13BB13DE292BCD65004F7FF6 /* FormulaireP7ViewController.swift */,
+				1357711E293240FA00EEBFC9 /* SketchViewController.swift */,
 			);
 			path = Formulaire;
+			sourceTree = "<group>";
+		};
+		13BD16FE293A7DBD00B9EA5F /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				13BD16FF293A7DBD00B9EA5F /* e-Constat */,
+			);
+			name = Packages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +303,7 @@
 			packageReferences = (
 				135F110A291E9EF200FA1108 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				138B85552923D9A300E4C3C7 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				13BD16FB293A503F00B9EA5F /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			productRefGroup = 135F10F1291E9D3900FA1108 /* Products */;
 			projectDirPath = "";
@@ -286,6 +334,7 @@
 			files = (
 				13CB40922927C0A4006B5665 /* ChangePassViewController.swift in Sources */,
 				135F10F8291E9D3900FA1108 /* ViewController.swift in Sources */,
+				13513C8F293E832800C8177D /* SelectedTypeViewController.swift in Sources */,
 				13BB13DB292BC1D9004F7FF6 /* FormulaireP5ViewController.swift in Sources */,
 				13CB408A2927BD66006B5665 /* loginViewController.swift in Sources */,
 				135E82722930F70D00AADA26 /* NewCarViewController.swift in Sources */,
@@ -294,6 +343,7 @@
 				13BB13DD292BCABE004F7FF6 /* FormulaireP6ViewController.swift in Sources */,
 				13BB13D2292B89CB004F7FF6 /* FormulaireP1ViewController.swift in Sources */,
 				135F1113291EA06D00FA1108 /* UserViewModel.swift in Sources */,
+				1357711F293240FA00EEBFC9 /* SketchViewController.swift in Sources */,
 				135F10F4291E9D3900FA1108 /* AppDelegate.swift in Sources */,
 				13BB13D8292BB7D8004F7FF6 /* FormulaireP4ViewController.swift in Sources */,
 				13C330D429293E9000D3DC6B /* HomeViewController.swift in Sources */,
@@ -301,6 +351,7 @@
 				135F10FE291E9D3900FA1108 /* e_Constat.xcdatamodeld in Sources */,
 				13BB13DF292BCD65004F7FF6 /* FormulaireP7ViewController.swift in Sources */,
 				13C330D029293A0300D3DC6B /* CarViewController.swift in Sources */,
+				13BD16F8293A3E2800B9EA5F /* Insurance.swift in Sources */,
 				13CB408C2927BEB2006B5665 /* SignUpViewController.swift in Sources */,
 				135E82702930EDCB00AADA26 /* CarViewModel.swift in Sources */,
 				135F1111291E9FED00FA1108 /* User.swift in Sources */,
@@ -310,9 +361,13 @@
 				13CB40942927CC1E006B5665 /* ProfileViewController.swift in Sources */,
 				13BB13D6292BACE1004F7FF6 /* FormulaireP3ViewController.swift in Sources */,
 				13BB13D4292B8A98004F7FF6 /* FormulaireP2ViewController.swift in Sources */,
+				13A3E5BB293E5A7000600EDE /* NewInsurnaceViewController.swift in Sources */,
+				13BD16F6293A2CF000B9EA5F /* CarDetailsViewController.swift in Sources */,
 				13CB40902927C065006B5665 /* OTPViewController.swift in Sources */,
+				13BD16FA293A3F7600B9EA5F /* InsuranceViewModel.swift in Sources */,
 				13C330D229293E7500D3DC6B /* HistoryViewController.swift in Sources */,
 				13B223492923CF7000258B2E /* LoadingScreen.swift in Sources */,
+				13513C8D293E7C5500C8177D /* SelectVehiculeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +516,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "e-Constat/Info.plist";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "To store the drawing";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -488,6 +544,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "e-Constat/Info.plist";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "To store the drawing";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -544,6 +601,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 5.0.0;
+			};
+		};
+		13BD16FB293A503F00B9EA5F /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

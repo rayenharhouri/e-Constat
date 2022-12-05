@@ -16,6 +16,7 @@ class FormCarViewController: UIViewController {
             TFnumSerie.layer.borderColor = UIColor.link.cgColor
             TFnumSerie.backgroundColor = UIColor.systemGray6
             TFnumSerie.setIcon(UIImage(named: "icons8-vérification-du-mot-de-passe-50")!)
+            TFnumSerie.layer.cornerRadius = 20
         }}
     @IBOutlet weak var TFBrand: UITextField!{
         didSet {
@@ -24,6 +25,7 @@ class FormCarViewController: UIViewController {
             TFBrand.layer.borderColor = UIColor.link.cgColor
             TFBrand.backgroundColor = UIColor.systemGray6
             TFBrand.text = brand
+            
         }
     }
     @IBOutlet weak var TFtype: UITextField!{
@@ -33,6 +35,7 @@ class FormCarViewController: UIViewController {
             TFtype.backgroundColor = UIColor.systemGray6
             TFtype.layer.borderColor = UIColor.link.cgColor
             TFtype.setIcon(UIImage(named: "icons8-voiture-48")!)
+            TFtype.layer.cornerRadius = 20
         }}
     @IBOutlet weak var TFimm1: UITextField!{
         didSet {

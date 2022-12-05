@@ -11,10 +11,11 @@ class FormulaireP1ViewController: UIViewController {
     
     
     
-    @IBOutlet weak var firstNameTF: UITextField!
+
     
    
-    
+    @IBOutlet weak var dateOfAccident: UIDatePicker!
+    @IBOutlet weak var whereAccidentHappnedTF: UITextField!
     
     
     override func viewDidLoad() {
@@ -28,9 +29,12 @@ class FormulaireP1ViewController: UIViewController {
    
     
     @IBAction func buttonNext(_ sender: Any) {
-        let controller = storyboard?.instantiateViewController(identifier:"Formulaire2") as! FormulaireP2ViewController
-        controller.text = firstNameTF.text
-        present(controller, animated: true ,completion : nil)
+       
+        let vcP2 = storyboard?.instantiateViewController(identifier: "vcP2") as! FormulaireP2ViewController
+        vcP2.whereAccidentHappnedP2 = whereAccidentHappnedTF.text!
+        vcP2.dateOfAccidentP2 = dateOfAccident.date
+        self.navigationController?.pushViewController(vcP2, animated: true)
+        
     }
                 
 }

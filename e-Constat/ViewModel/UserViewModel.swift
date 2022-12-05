@@ -10,6 +10,7 @@ import Alamofire
 import SwiftyJSON
 
 
+
 class UserViewModel: ObservableObject {
 
     static let sharedInstance = UserViewModel()
@@ -261,5 +262,14 @@ class UserViewModel: ObservableObject {
                 }
             }
     }
+    
+    func Logout(){
+        
+        UserDefaults.standard.setValue("", forKey: "userToken")
+        print("///////////////")
+        let Token = UserDefaults.standard.object(forKey: "userToken") as! String
+        print(Token)
+    }
+   
 }
 

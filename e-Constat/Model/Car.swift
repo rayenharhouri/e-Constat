@@ -8,7 +8,7 @@
 import Foundation
 struct Car: Codable {
     
-    var _id : String?
+    var _id : String
     var brand : String
     var type : String
     var numSerie : String
@@ -18,7 +18,7 @@ struct Car: Codable {
     var carIcon : String
 
     
-    init(_id : String? = nil,brand: String, type: String, numSerie: String, fiscalPower: Int,numImm: String,owner: String,carIcon: String) {
+    init(_id : String ,brand: String, type: String, numSerie: String, fiscalPower: Int,numImm: String,owner: String,carIcon: String) {
         self._id = _id
         self.brand = brand
         self.type = type
