@@ -11,6 +11,8 @@ class SignUpViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
 
         // Do any additional setup after loading the view.
     }
@@ -119,7 +121,10 @@ class SignUpViewController: UIViewController {
             UserViewModel().SendVerification(email: self.emailSTF.text!)
          }
     }
-
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
 
 }
 

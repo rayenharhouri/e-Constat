@@ -6,74 +6,104 @@
 //
 
 import UIKit
-import PencilKit
-import PhotosUI
 
-class SketchViewController: UIViewController,PKCanvasViewDelegate,PKToolPickerObserver {
+
+class SketchViewController: UIViewController {
     
     
-    let canvasView: PKCanvasView =
-    {
-        let canvas = PKCanvasView()
-        canvas.drawingPolicy = .anyInput
-        return canvas
-     
-    }()
+
+    @IBOutlet weak var collectionview: UICollectionView!
     
-    let drawing = PKDrawing()
+    @IBOutlet weak var canvasView: CanvasView!
+    
+    var items: [UIColor] = [UIColor.red, UIColor.green,            UIColor.blue,UIColor.black,UIColor.white,UIColor.purple,UIColor.orange,UIColor.brown,UIColor.yellow ]
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        canvasView.drawing = drawing
-        canvasView.delegate = self
-   
-        canvasView.alwaysBounceVertical = true
-        view.addSubview(canvasView)
-       
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        canvasView.frame = view.bounds
-        canvasView.tool.self
-    }
-    
-    
-    
-    override func viewDidAppear(_ animated: Bool) {
-     super.viewDidAppear(animated)
-        let toolPicker = PKToolPicker()
+        
+        collectionview.delegate = self
+        collectionview.dataSource = self
         
         
-        //toolPicker.setVisible(true , forFirstResponder: canvasView)
-        toolPicker.addObserver(canvasView)
-        canvasView.becomeFirstResponder()
-
+    }
+ 
+    
+    @IBAction func Save(_ sender: Any) {
+        let image = canvasView.save()
+        UIImageWriteToSavedPhotosAlbum(image, self, #selector(imageSaved(_:didFinishSavingWithError:contextType:)), nil)
     }
     
     
+    @objc func imageSaved(_ image: UIImage, didFinishSavingWithError error: Error?, contextType: UnsafeRawPointer)
+    {
+        if error != nil {
+            print("Unable to save the image into photos")
+        }else{
+            print("Image saved into photos.")
+        }
+    }
+    
+    
+    @IBAction func Undo(_ sender: Any) {
+        canvasView.undoDraw()
+    }
+    
+    
+    @IBAction func Clear(_ sender: Any) {
+        canvasView.clearCanvasView()
+    }
+    
+    
+    
+    
+}
 
-    @IBAction func saveDrawing(_ sender: Any) {
-        UIGraphicsBeginImageContextWithOptions(canvasView.bounds.size, false, UIScreen.main.scale)
-        canvasView.drawHierarchy(in: canvasView.bounds, afterScreenUpdates: true)
-        let image = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        if image != nil
-        {
-            PHPhotoLibrary.shared().performChanges( {
-                PHAssetChangeRequest.creationRequestForAsset(from: image!)
-            },completionHandler: {succes, error in
-            })
+
+extension SketchViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return items.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+        if let view =  cell.viewWithTag(5) {
+            
+            view.backgroundColor = items[indexPath.row]
+            view.layer.cornerRadius = 5
+
         }
         
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        canvasView.strokeColor = items[indexPath.row]
     }
     
     
+}
+
+
+extension UIView {
     
-    @IBAction func restore(_ sender: Any) {
-        canvasView.drawing = drawing
+    func save() ->UIImage{
+        
+        UIGraphicsBeginImageContextWithOptions(self.bounds.size, false, UIScreen.main.scale)
+        drawHierarchy(in: self.bounds, afterScreenUpdates: true)
+        
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        if image != nil {
+            return image!
+        }
+        return UIImage()
+        
     }
     
     
 
+    
+    
 }

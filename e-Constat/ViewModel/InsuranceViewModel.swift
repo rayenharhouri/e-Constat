@@ -48,7 +48,7 @@ class InsuranceViewModel: ObservableObject {
     //Getting the token from userdefault
     
     let parametres: [String: Any] = [
-                "carId":carId
+                "cars" : carId
             ]
     AF.request("http://127.0.0.1:3000/insurance/getAll", method: .post,
                parameters: parametres,encoding: JSONEncoding.default)
@@ -62,12 +62,9 @@ class InsuranceViewModel: ObservableObject {
                 let singleJsonItem = JSON(response.data!)
                 print(singleJsonItem)
                     insurances = makeInsurance(jsonItem: singleJsonItem)
-                    print("================")
+                    print("GetAllViewModel")
                     print(singleJsonItem)
-                    print("================")
-                print("================")
-                
-                print("================")
+                    print("GetAllViewModel")
                 completed(true, insurances)
                 print("success")
             case let .failure(error):

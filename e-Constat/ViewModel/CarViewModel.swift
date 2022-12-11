@@ -44,6 +44,7 @@ class CarViewModel: ObservableObject {
                 }
             }
     }
+    
     func recupererTout(completed: @escaping (Bool, [Car]?) -> Void) {
         //Getting the token from userdefault
         let Token = UserDefaults.standard.object(forKey: "userToken") as! String

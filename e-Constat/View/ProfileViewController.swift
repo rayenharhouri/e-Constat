@@ -115,4 +115,29 @@ class ProfileViewController: UIViewController {
        
     }
     
+    
+    
+    @IBAction func Darkmode(_ sender: UISwitch) {
+        if #available(ios 13.0, *){
+            
+            let appDelegate = UIApplication.shared.windows.first
+            
+            if sender.isOn {
+                appDelegate?.overrideUserInterfaceStyle = .dark
+                return
+            }
+            appDelegate?.overrideUserInterfaceStyle = .light
+            return
+            
+        }else{
+            
+        }
+        
+        
+    }
+    
+    
+    
+    
+    
 }

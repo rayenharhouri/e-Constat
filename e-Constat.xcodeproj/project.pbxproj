@@ -7,9 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1312BEC3293F86CF00807E52 /* canvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1312BEC2293F86CF00807E52 /* canvasView.swift */; };
 		13513C8D293E7C5500C8177D /* SelectVehiculeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13513C8C293E7C5500C8177D /* SelectVehiculeViewController.swift */; };
 		13513C8F293E832800C8177D /* SelectedTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13513C8E293E832800C8177D /* SelectedTypeViewController.swift */; };
 		1357711F293240FA00EEBFC9 /* SketchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1357711E293240FA00EEBFC9 /* SketchViewController.swift */; };
+		135A021B2946340C00B64C5E /* SelectTypeBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135A021A2946340C00B64C5E /* SelectTypeBViewController.swift */; };
+		135A021D2946341A00B64C5E /* SelecVehicleBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135A021C2946341A00B64C5E /* SelecVehicleBViewController.swift */; };
+		135A0220294642CC00B64C5E /* ChooseCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135A021F294642CC00B64C5E /* ChooseCarViewController.swift */; };
+		135A0222294652C100B64C5E /* Constat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135A0221294652C100B64C5E /* Constat.swift */; };
+		135A02242946530100B64C5E /* carDamage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135A02232946530100B64C5E /* carDamage.swift */; };
+		135A02262946546300B64C5E /* carDamageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135A02252946546300B64C5E /* carDamageViewModel.swift */; };
 		135E826E2930EC7C00AADA26 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135E826D2930EC7C00AADA26 /* Car.swift */; };
 		135E82702930EDCB00AADA26 /* CarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135E826F2930EDCB00AADA26 /* CarViewModel.swift */; };
 		135E82722930F70D00AADA26 /* NewCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135E82712930F70D00AADA26 /* NewCarViewController.swift */; };
@@ -26,16 +33,11 @@
 		135F1113291EA06D00FA1108 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135F1112291EA06D00FA1108 /* UserViewModel.swift */; };
 		138B85572923D9A300E4C3C7 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 138B85562923D9A300E4C3C7 /* SwiftyJSON */; };
 		13A3E5BB293E5A7000600EDE /* NewInsurnaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A3E5BA293E5A7000600EDE /* NewInsurnaceViewController.swift */; };
+		13AB337229461D8C00AAC96F /* ConstatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AB337129461D8C00AAC96F /* ConstatViewModel.swift */; };
+		13AB337529461DF200AAC96F /* QrCodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AB337429461DF200AAC96F /* QrCodeScannerViewController.swift */; };
 		13B223472923C4D900258B2E /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B223462923C4D900258B2E /* Utilities.swift */; };
 		13B223492923CF7000258B2E /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B223482923CF7000258B2E /* LoadingScreen.swift */; };
 		13B2234B2923D17C00258B2E /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B2234A2923D17C00258B2E /* Alert.swift */; };
-		13BB13D2292B89CB004F7FF6 /* FormulaireP1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BB13D1292B89CB004F7FF6 /* FormulaireP1ViewController.swift */; };
-		13BB13D4292B8A98004F7FF6 /* FormulaireP2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BB13D3292B8A98004F7FF6 /* FormulaireP2ViewController.swift */; };
-		13BB13D6292BACE1004F7FF6 /* FormulaireP3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BB13D5292BACE1004F7FF6 /* FormulaireP3ViewController.swift */; };
-		13BB13D8292BB7D8004F7FF6 /* FormulaireP4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BB13D7292BB7D8004F7FF6 /* FormulaireP4ViewController.swift */; };
-		13BB13DB292BC1D9004F7FF6 /* FormulaireP5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BB13DA292BC1D9004F7FF6 /* FormulaireP5ViewController.swift */; };
-		13BB13DD292BCABE004F7FF6 /* FormulaireP6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BB13DC292BCABE004F7FF6 /* FormulaireP6ViewController.swift */; };
-		13BB13DF292BCD65004F7FF6 /* FormulaireP7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BB13DE292BCD65004F7FF6 /* FormulaireP7ViewController.swift */; };
 		13BD16F6293A2CF000B9EA5F /* CarDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BD16F5293A2CF000B9EA5F /* CarDetailsViewController.swift */; };
 		13BD16F8293A3E2800B9EA5F /* Insurance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BD16F7293A3E2800B9EA5F /* Insurance.swift */; };
 		13BD16FA293A3F7600B9EA5F /* InsuranceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BD16F9293A3F7600B9EA5F /* InsuranceViewModel.swift */; };
@@ -51,9 +53,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1312BEC2293F86CF00807E52 /* canvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = canvasView.swift; sourceTree = "<group>"; };
 		13513C8C293E7C5500C8177D /* SelectVehiculeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectVehiculeViewController.swift; sourceTree = "<group>"; };
 		13513C8E293E832800C8177D /* SelectedTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedTypeViewController.swift; sourceTree = "<group>"; };
 		1357711E293240FA00EEBFC9 /* SketchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchViewController.swift; sourceTree = "<group>"; };
+		135A021A2946340C00B64C5E /* SelectTypeBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTypeBViewController.swift; sourceTree = "<group>"; };
+		135A021C2946341A00B64C5E /* SelecVehicleBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelecVehicleBViewController.swift; sourceTree = "<group>"; };
+		135A021F294642CC00B64C5E /* ChooseCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCarViewController.swift; sourceTree = "<group>"; };
+		135A0221294652C100B64C5E /* Constat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constat.swift; sourceTree = "<group>"; };
+		135A02232946530100B64C5E /* carDamage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carDamage.swift; sourceTree = "<group>"; };
+		135A02252946546300B64C5E /* carDamageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carDamageViewModel.swift; sourceTree = "<group>"; };
 		135E826D2930EC7C00AADA26 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		135E826F2930EDCB00AADA26 /* CarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewModel.swift; sourceTree = "<group>"; };
 		135E82712930F70D00AADA26 /* NewCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCarViewController.swift; sourceTree = "<group>"; };
@@ -70,16 +79,11 @@
 		135F1110291E9FED00FA1108 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		135F1112291EA06D00FA1108 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		13A3E5BA293E5A7000600EDE /* NewInsurnaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewInsurnaceViewController.swift; sourceTree = "<group>"; };
+		13AB337129461D8C00AAC96F /* ConstatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstatViewModel.swift; sourceTree = "<group>"; };
+		13AB337429461DF200AAC96F /* QrCodeScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeScannerViewController.swift; sourceTree = "<group>"; };
 		13B223462923C4D900258B2E /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		13B223482923CF7000258B2E /* LoadingScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadingScreen.swift; path = "../../../../Chicky-ios/Chicky/Utilities/LoadingScreen.swift"; sourceTree = "<group>"; };
 		13B2234A2923D17C00258B2E /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Alert.swift; path = "../../../../Chicky-ios/Chicky/Utilities/Alert.swift"; sourceTree = "<group>"; };
-		13BB13D1292B89CB004F7FF6 /* FormulaireP1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaireP1ViewController.swift; sourceTree = "<group>"; };
-		13BB13D3292B8A98004F7FF6 /* FormulaireP2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaireP2ViewController.swift; sourceTree = "<group>"; };
-		13BB13D5292BACE1004F7FF6 /* FormulaireP3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaireP3ViewController.swift; sourceTree = "<group>"; };
-		13BB13D7292BB7D8004F7FF6 /* FormulaireP4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaireP4ViewController.swift; sourceTree = "<group>"; };
-		13BB13DA292BC1D9004F7FF6 /* FormulaireP5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaireP5ViewController.swift; sourceTree = "<group>"; };
-		13BB13DC292BCABE004F7FF6 /* FormulaireP6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaireP6ViewController.swift; sourceTree = "<group>"; };
-		13BB13DE292BCD65004F7FF6 /* FormulaireP7ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaireP7ViewController.swift; sourceTree = "<group>"; };
 		13BD16F5293A2CF000B9EA5F /* CarDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsViewController.swift; sourceTree = "<group>"; };
 		13BD16F7293A3E2800B9EA5F /* Insurance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Insurance.swift; sourceTree = "<group>"; };
 		13BD16F9293A3F7600B9EA5F /* InsuranceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceViewModel.swift; sourceTree = "<group>"; };
@@ -113,8 +117,18 @@
 			children = (
 				13513C8E293E832800C8177D /* SelectedTypeViewController.swift */,
 				13513C8C293E7C5500C8177D /* SelectVehiculeViewController.swift */,
+				135A021A2946340C00B64C5E /* SelectTypeBViewController.swift */,
+				135A021C2946341A00B64C5E /* SelecVehicleBViewController.swift */,
 			);
 			name = Type;
+			sourceTree = "<group>";
+		};
+		135A021E294642A400B64C5E /* UserAmanagement */ = {
+			isa = PBXGroup;
+			children = (
+				135A021F294642CC00B64C5E /* ChooseCarViewController.swift */,
+			);
+			path = UserAmanagement;
 			sourceTree = "<group>";
 		};
 		135E82752930F95600AADA26 /* Car */ = {
@@ -180,12 +194,13 @@
 		135F110D291E9FBA00FA1108 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				13AB337329461DA600AAC96F /* History */,
 				13A3E5B9293E5A5100600EDE /* insurance */,
 				135E82762930F97600AADA26 /* User */,
 				135E82752930F95600AADA26 /* Car */,
 				13BB13D9292BC146004F7FF6 /* Formulaire */,
-				13C330D129293E7500D3DC6B /* HistoryViewController.swift */,
 				13C330D329293E9000D3DC6B /* HomeViewController.swift */,
+				13AB337429461DF200AAC96F /* QrCodeScannerViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -196,6 +211,8 @@
 				135F1112291EA06D00FA1108 /* UserViewModel.swift */,
 				135E826F2930EDCB00AADA26 /* CarViewModel.swift */,
 				13BD16F9293A3F7600B9EA5F /* InsuranceViewModel.swift */,
+				13AB337129461D8C00AAC96F /* ConstatViewModel.swift */,
+				135A02252946546300B64C5E /* carDamageViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -206,6 +223,8 @@
 				135F1110291E9FED00FA1108 /* User.swift */,
 				135E826D2930EC7C00AADA26 /* Car.swift */,
 				13BD16F7293A3E2800B9EA5F /* Insurance.swift */,
+				135A0221294652C100B64C5E /* Constat.swift */,
+				135A02232946530100B64C5E /* carDamage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -216,6 +235,14 @@
 				13A3E5BA293E5A7000600EDE /* NewInsurnaceViewController.swift */,
 			);
 			path = insurance;
+			sourceTree = "<group>";
+		};
+		13AB337329461DA600AAC96F /* History */ = {
+			isa = PBXGroup;
+			children = (
+				13C330D129293E7500D3DC6B /* HistoryViewController.swift */,
+			);
+			name = History;
 			sourceTree = "<group>";
 		};
 		13B223452923C4C700258B2E /* Utilities */ = {
@@ -231,15 +258,10 @@
 		13BB13D9292BC146004F7FF6 /* Formulaire */ = {
 			isa = PBXGroup;
 			children = (
+				135A021E294642A400B64C5E /* UserAmanagement */,
 				13513C90293E832B00C8177D /* Type */,
-				13BB13D1292B89CB004F7FF6 /* FormulaireP1ViewController.swift */,
-				13BB13D3292B8A98004F7FF6 /* FormulaireP2ViewController.swift */,
-				13BB13D5292BACE1004F7FF6 /* FormulaireP3ViewController.swift */,
-				13BB13D7292BB7D8004F7FF6 /* FormulaireP4ViewController.swift */,
-				13BB13DA292BC1D9004F7FF6 /* FormulaireP5ViewController.swift */,
-				13BB13DC292BCABE004F7FF6 /* FormulaireP6ViewController.swift */,
-				13BB13DE292BCD65004F7FF6 /* FormulaireP7ViewController.swift */,
 				1357711E293240FA00EEBFC9 /* SketchViewController.swift */,
+				1312BEC2293F86CF00807E52 /* canvasView.swift */,
 			);
 			path = Formulaire;
 			sourceTree = "<group>";
@@ -335,21 +357,24 @@
 				13CB40922927C0A4006B5665 /* ChangePassViewController.swift in Sources */,
 				135F10F8291E9D3900FA1108 /* ViewController.swift in Sources */,
 				13513C8F293E832800C8177D /* SelectedTypeViewController.swift in Sources */,
-				13BB13DB292BC1D9004F7FF6 /* FormulaireP5ViewController.swift in Sources */,
+				13AB337229461D8C00AAC96F /* ConstatViewModel.swift in Sources */,
+				135A0222294652C100B64C5E /* Constat.swift in Sources */,
+				135A021D2946341A00B64C5E /* SelecVehicleBViewController.swift in Sources */,
+				135A02262946546300B64C5E /* carDamageViewModel.swift in Sources */,
 				13CB408A2927BD66006B5665 /* loginViewController.swift in Sources */,
+				1312BEC3293F86CF00807E52 /* canvasView.swift in Sources */,
 				135E82722930F70D00AADA26 /* NewCarViewController.swift in Sources */,
+				135A0220294642CC00B64C5E /* ChooseCarViewController.swift in Sources */,
 				135E82782930F9C700AADA26 /* FormCarViewController.swift in Sources */,
 				135E826E2930EC7C00AADA26 /* Car.swift in Sources */,
-				13BB13DD292BCABE004F7FF6 /* FormulaireP6ViewController.swift in Sources */,
-				13BB13D2292B89CB004F7FF6 /* FormulaireP1ViewController.swift in Sources */,
 				135F1113291EA06D00FA1108 /* UserViewModel.swift in Sources */,
+				135A021B2946340C00B64C5E /* SelectTypeBViewController.swift in Sources */,
 				1357711F293240FA00EEBFC9 /* SketchViewController.swift in Sources */,
 				135F10F4291E9D3900FA1108 /* AppDelegate.swift in Sources */,
-				13BB13D8292BB7D8004F7FF6 /* FormulaireP4ViewController.swift in Sources */,
 				13C330D429293E9000D3DC6B /* HomeViewController.swift in Sources */,
 				13CB408E2927BFEC006B5665 /* ForgetPassViewController.swift in Sources */,
 				135F10FE291E9D3900FA1108 /* e_Constat.xcdatamodeld in Sources */,
-				13BB13DF292BCD65004F7FF6 /* FormulaireP7ViewController.swift in Sources */,
+				13AB337529461DF200AAC96F /* QrCodeScannerViewController.swift in Sources */,
 				13C330D029293A0300D3DC6B /* CarViewController.swift in Sources */,
 				13BD16F8293A3E2800B9EA5F /* Insurance.swift in Sources */,
 				13CB408C2927BEB2006B5665 /* SignUpViewController.swift in Sources */,
@@ -359,13 +384,12 @@
 				135F10F6291E9D3900FA1108 /* SceneDelegate.swift in Sources */,
 				13B2234B2923D17C00258B2E /* Alert.swift in Sources */,
 				13CB40942927CC1E006B5665 /* ProfileViewController.swift in Sources */,
-				13BB13D6292BACE1004F7FF6 /* FormulaireP3ViewController.swift in Sources */,
-				13BB13D4292B8A98004F7FF6 /* FormulaireP2ViewController.swift in Sources */,
 				13A3E5BB293E5A7000600EDE /* NewInsurnaceViewController.swift in Sources */,
 				13BD16F6293A2CF000B9EA5F /* CarDetailsViewController.swift in Sources */,
 				13CB40902927C065006B5665 /* OTPViewController.swift in Sources */,
 				13BD16FA293A3F7600B9EA5F /* InsuranceViewModel.swift in Sources */,
 				13C330D229293E7500D3DC6B /* HistoryViewController.swift in Sources */,
+				135A02242946530100B64C5E /* carDamage.swift in Sources */,
 				13B223492923CF7000258B2E /* LoadingScreen.swift in Sources */,
 				13513C8D293E7C5500C8177D /* SelectVehiculeViewController.swift in Sources */,
 			);
@@ -514,6 +538,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 34C4534N6R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "e-Constat/Info.plist";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "To store the drawing";
@@ -522,6 +547,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -542,6 +568,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 34C4534N6R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "e-Constat/Info.plist";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "To store the drawing";
@@ -550,6 +577,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

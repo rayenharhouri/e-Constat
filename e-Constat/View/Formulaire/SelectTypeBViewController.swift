@@ -1,29 +1,27 @@
 //
-//  SelectVehiculeViewController.swift
+//  SelectTypeBViewController.swift
 //  e-Constat
 //
-//  Created by Rayen_Mezen on 5/12/2022.
+//  Created by Rayen_Mezen on 11/12/2022.
 //
 
 import UIKit
 
-
-class SelectVehiculeViewController: UIViewController {
+class SelectTypeBViewController: UIViewController {
     var list : [String] = ["car","motour","kamyoun"]
     var type : String = ""
-    var currentCar : Car?
+    var carBid : String?
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.backgroundColor = UIColor.clear
-        print(currentCar!)
+        self.TableView.backgroundColor = UIColor.clear
+        print(carBid!)
+        // Do any additional setup after loading the view.
     }
     
-
-
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var TableView: UITableView!
     
 }
-extension SelectVehiculeViewController : UITableViewDelegate,UITableViewDataSource {
+extension SelectTypeBViewController : UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return list.count
     }
@@ -37,16 +35,17 @@ extension SelectVehiculeViewController : UITableViewDelegate,UITableViewDataSour
         return cell!
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "SelectedTypeSegue" {
-            let destination = segue.destination as! SelectedTypeViewController
+        if segue.identifier == "SelectTypeBSegue" {
+            let destination = segue.destination as! SelecVehicleBViewController
             destination.type = type
-            destination.carId = currentCar!._id
+            destination.carId = carBid!
         }
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         type = list[indexPath.row]
-        self.performSegue(withIdentifier: "SelectedTypeSegue", sender: type)
-        self.performSegue(withIdentifier: "SelectedTypeSegue", sender: currentCar)
+        self.performSegue(withIdentifier: "SelectTypeBSegue", sender: type)
+        self.performSegue(withIdentifier: "SelectTypeBSegue", sender: carBid!)
     }
 }
+
