@@ -16,7 +16,7 @@ class SketchViewController: UIViewController {
     
     @IBOutlet weak var canvasView: CanvasView!
     
-    var items: [UIColor] = [UIColor.red, UIColor.green,            UIColor.blue,UIColor.black,UIColor.white,UIColor.purple,UIColor.orange,UIColor.brown,UIColor.yellow ]
+    var items: [UIColor] = [UIColor.red, UIColor.green,UIColor.blue,UIColor.black,UIColor.white,UIColor.purple,UIColor.orange,UIColor.brown,UIColor.yellow ]
     
     
     
@@ -29,10 +29,17 @@ class SketchViewController: UIViewController {
         
     }
  
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "seg" {
+            let destination = segue.destination as! SendReportViewController
+            
+            }
+    }
     @IBAction func Save(_ sender: Any) {
         let image = canvasView.save()
         UIImageWriteToSavedPhotosAlbum(image, self, #selector(imageSaved(_:didFinishSavingWithError:contextType:)), nil)
+        performSegue(withIdentifier: "Segue", sender: nil)
+        
     }
     
     

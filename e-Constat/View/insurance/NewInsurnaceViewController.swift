@@ -15,10 +15,37 @@ class NewInsuranceViewController: UIViewController {
     
     var typePickerView = UIPickerView()
     
-    @IBOutlet weak var TFName: UITextField!
+    @IBOutlet weak var TFName: UITextField!{
+        didSet {
+            TFName.layer.masksToBounds = true
+            TFName.layer.borderWidth = 1
+            TFName.backgroundColor = UIColor.systemGray6
+            TFName.textColor = UIColor.black
+            TFName.layer.cornerRadius = 25
+            TFName.layer.borderColor = UIColor.link.cgColor
+
+        }}
     
-    @IBOutlet weak var TFnumContrat: UITextField!
-    @IBOutlet weak var TFAgency: UITextField!
+    @IBOutlet weak var TFnumContrat: UITextField!{
+        didSet {
+            TFnumContrat.layer.masksToBounds = true
+            TFnumContrat.layer.borderWidth = 1
+            TFnumContrat.backgroundColor = UIColor.systemGray6
+            TFnumContrat.textColor = UIColor.black
+            TFnumContrat.layer.cornerRadius = 25
+            TFnumContrat.layer.borderColor = UIColor.link.cgColor
+
+        }}
+    @IBOutlet weak var TFAgency: UITextField!{
+        didSet {
+            TFAgency.layer.masksToBounds = true
+            TFAgency.layer.borderWidth = 1
+            TFAgency.backgroundColor = UIColor.systemGray6
+            TFAgency.textColor = UIColor.black
+            TFAgency.layer.cornerRadius = 25
+            TFAgency.layer.borderColor = UIColor.link.cgColor
+
+        }}
     @IBOutlet weak var VToOutlet: UIDatePicker!
     @IBOutlet weak var VFromOutlet: UIDatePicker!
     override func viewDidLoad() {

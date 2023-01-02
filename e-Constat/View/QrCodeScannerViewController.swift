@@ -15,11 +15,14 @@ class QrCodeScannerViewController: UIViewController {
     var InsuranceB : Insurance?
     var captureSession : AVCaptureSession!
     var previewLayer : AVCaptureVideoPreviewLayer!
+    var constatId : String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ConstatViewModel().recupererTout(ids: "6389f786591f1cab0201f26563790b8f9ad9c620383633ef6395e7c8b46cd6f005f4b04c", completed: {success, data in
+        
+        
+        ConstatViewModel().recupererTout(ids: "6389f832591f1cab0201f27163790b8f9ad9c620383633ef63b2cff8c510f697cebad505", completed: {success, data in
             if success {
                 self.present(Alert.makeAlert(titre: "Done", message: "load cars "),animated: true)
                 print(data!)
@@ -28,7 +31,21 @@ class QrCodeScannerViewController: UIViewController {
                 self.userB = (dataB[1] as! User)
                 self.InsuranceB = (dataB[2] as! Insurance)
                 
-                print(self.CarB!)
+                    print("QRCode!%&/()=?")
+                print(self.constatId!)
+                    ConstatViewModel().AddNewConstatB(userB: (self.userB?._id)!, carB: self.CarB!._id, insuranceB: self.InsuranceB!._id, constatId: self.constatId!, completed: { success, constatId in
+                        if success {
+                            print("adConstat")
+                            let constatId = constatId as! String
+                            
+                        } else {
+                            self.present(Alert.makeAlert(titre: "Error", message: "Could not load cars"),animated: true)
+                        }
+                    })
+                 
+
+                
+                
             } else {
                 self.present(Alert.makeAlert(titre: "Error", message: "Could not load cars "),animated: true)
             }
@@ -102,5 +119,6 @@ extension QrCodeScannerViewController : AVCaptureMetadataOutputObjectsDelegate {
             }
         })
     }
+
 
 }

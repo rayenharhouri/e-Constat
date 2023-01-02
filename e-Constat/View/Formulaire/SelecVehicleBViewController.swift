@@ -22,8 +22,13 @@ class SelecVehicleBViewController: UIViewController {
     var MidRight : Bool = true
     var MidLeft : Bool = true
     var TopLeft : Bool = true
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "Segue" {
+            let destination = segue.destination as! SketchViewController
+        }
+    }
 
-
+    
     
     @IBOutlet weak var TopLeftB: UIButton!
     @IBOutlet weak var MidLeftB: UIButton!
@@ -56,6 +61,7 @@ class SelecVehicleBViewController: UIViewController {
         }
     }
     
+    
     @IBAction func TopLeft(_ sender: Any) {
         var color = TopLeftB.tintColor.accessibilityName
         print(color)
@@ -67,6 +73,7 @@ class SelecVehicleBViewController: UIViewController {
             TopLeftB.setImage(UIImage(systemName: "checkmark.circle"), for: .normal)
         }
     }
+    
     
     @IBAction func TopRight(_ sender: Any) {
         var color = TopRightB.tintColor.accessibilityName
@@ -114,6 +121,8 @@ class SelecVehicleBViewController: UIViewController {
             self.present(Alert.makeAlert(titre: "Warning", message: "Problem Accured"), animated: true)
                                     }
                })
+        
+        performSegue(withIdentifier: "Segue", sender: nil)
     }
     @IBOutlet weak var ImageOutlet: UIImageView!
 }

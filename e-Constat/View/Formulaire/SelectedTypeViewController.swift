@@ -16,8 +16,12 @@ class SelectedTypeViewController: UIViewController {
     var MidRight : Bool = true
     var MidLeft : Bool = true
     var TopLeft : Bool = true
+    var Insurance : Insurance?
+    var idUser : String?
+    var constatIdSender : String = ""
+    
 
-
+    @IBOutlet weak var nextOut: UIButton!
     @IBOutlet weak var BottomRightB: UIButton!
     @IBOutlet weak var TopRightB: UIButton!
     @IBOutlet weak var ButtomLeftB: UIButton!
@@ -28,6 +32,7 @@ class SelectedTypeViewController: UIViewController {
         super.viewDidLoad()
         ImageOutlet.image = UIImage(named: type)?.rotate(radians: .pi/2)
         print(carId!)
+        nextOut.isHidden = true
     }
     
     @IBAction func BottomLeft(_ sender: Any) {
@@ -99,17 +104,66 @@ class SelectedTypeViewController: UIViewController {
     }
     
     @IBAction func ClickNext(_ sender: Any) {
-        carDamageViewModel().addNew(TopLeft: TopLeft, MidLeft: MidLeft, BottomLeft: BottomLeft, TopRight: TopRight, MidRight: MidRight, bottomRight: BottomRight, carId: carId!, completed: {(success, reponse) in
-                        if success {
-                            let carDamage = reponse as! carDamage
-                            print(carDamage)
-                            //Add carDamageA to Constat
-                            } else {
-                            self.present(Alert.makeAlert(titre: "Warning", message: "Problem Accured"), animated: true)
-                                    }
-                                })
+        let view2 = QrCodeScannerViewController()
+        //present(view2,animated: true,completion: nil)
+        self.performSegue(withIdentifier: "seg", sender: constatIdSender)
+    }
+    
+    @IBOutlet weak var validateout: UIButton!
+    @IBAction func validate(_ sender: Any) {
+        carDamageViewModel().addNew(TopLeft: TopLeft, MidLeft: MidLeft, BottomLeft: BottomLeft, TopRight: TopRight, MidRight: MidRight, bottomRight: BottomRight, carId: carId!, completed: { (success, reponse) in
+            if success {
+                let carDamage = reponse as! carDamage
+                print(carDamage)
+                //Add carDamageA to Constat
+                self.getInsurance(id: self.carId!,cardamageA: carDamage._id)
+                self.validateout.isHidden = true
+                self.nextOut.isHidden = false
+            } else {
+                self.present(Alert.makeAlert(titre: "Warning", message: "Problem Accured"), animated: true)
+            }
+        })
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "seg" {
+            let destination = segue.destination as! QrCodeScannerViewController
+            destination.constatId = constatIdSender
+        }
     }
     @IBOutlet weak var ImageOutlet: UIImageView!
+    func getInsurance(id : String,cardamageA : String) {
+        InsuranceViewModel.sharedInstance.recupererTout(carId: id, completed:  { success, insurances in
+            if success {
+                self.Insurance = insurances!
+                if  let data = UserDefaults.standard.data(forKey: "utilisateur")
+                 {
+                 do {
+                     let decoder =  JSONDecoder()
+                     let user = try decoder.decode(User.self, from: data)
+                     self.idUser = user._id!
+                 } catch {
+                     print("Unable to decode")
+                      }
+                }
+                ConstatViewModel().AddNewConstat(userA: self.idUser!, carA: self.carId!, insuranceA: self.Insurance!._id,carDamageA: cardamageA, completed: { [self]success, constatId in
+                    if success {
+                        print("adConstat")
+                        let constatId = constatId as! String
+                        //send id to next view
+                        self.constatIdSender = constatId
+                        print("1234567")
+                        print(constatId)
+                        print("!!!!!!!!!!!!!!!!!!!!")
+                        print(constatIdSender)
+                    } else {
+                        self.present(Alert.makeAlert(titre: "Error", message: "Could not load cars"),animated: true)
+                    }
+                })
+            } else {
+                self.present(Alert.makeAlert(titre: "Error", message: "Could not load cars "),animated: true)
+            }
+        })
+    }
 }
 extension UIImage {
     func rotate(radians: CGFloat) -> UIImage {

@@ -10,6 +10,7 @@
 		1312BEC3293F86CF00807E52 /* canvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1312BEC2293F86CF00807E52 /* canvasView.swift */; };
 		13513C8D293E7C5500C8177D /* SelectVehiculeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13513C8C293E7C5500C8177D /* SelectVehiculeViewController.swift */; };
 		13513C8F293E832800C8177D /* SelectedTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13513C8E293E832800C8177D /* SelectedTypeViewController.swift */; };
+		13541DA229630F6D00B23A25 /* SendReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13541DA129630F6D00B23A25 /* SendReportViewController.swift */; };
 		1357711F293240FA00EEBFC9 /* SketchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1357711E293240FA00EEBFC9 /* SketchViewController.swift */; };
 		135A021B2946340C00B64C5E /* SelectTypeBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135A021A2946340C00B64C5E /* SelectTypeBViewController.swift */; };
 		135A021D2946341A00B64C5E /* SelecVehicleBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135A021C2946341A00B64C5E /* SelecVehicleBViewController.swift */; };
@@ -36,8 +37,6 @@
 		13AB337229461D8C00AAC96F /* ConstatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AB337129461D8C00AAC96F /* ConstatViewModel.swift */; };
 		13AB337529461DF200AAC96F /* QrCodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AB337429461DF200AAC96F /* QrCodeScannerViewController.swift */; };
 		13B223472923C4D900258B2E /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B223462923C4D900258B2E /* Utilities.swift */; };
-		13B223492923CF7000258B2E /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B223482923CF7000258B2E /* LoadingScreen.swift */; };
-		13B2234B2923D17C00258B2E /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B2234A2923D17C00258B2E /* Alert.swift */; };
 		13BD16F6293A2CF000B9EA5F /* CarDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BD16F5293A2CF000B9EA5F /* CarDetailsViewController.swift */; };
 		13BD16F8293A3E2800B9EA5F /* Insurance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BD16F7293A3E2800B9EA5F /* Insurance.swift */; };
 		13BD16FA293A3F7600B9EA5F /* InsuranceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BD16F9293A3F7600B9EA5F /* InsuranceViewModel.swift */; };
@@ -50,12 +49,16 @@
 		13CB40902927C065006B5665 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CB408F2927C065006B5665 /* OTPViewController.swift */; };
 		13CB40922927C0A4006B5665 /* ChangePassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CB40912927C0A4006B5665 /* ChangePassViewController.swift */; };
 		13CB40942927CC1E006B5665 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CB40932927CC1E006B5665 /* ProfileViewController.swift */; };
+		FAE9930B2948C13600D020AE /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE9930A2948C13600D020AE /* ContactView.swift */; };
+		FAE9930D2948C16E00D020AE /* BotResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE9930C2948C16E00D020AE /* BotResponse.swift */; };
+		FAE9930F2948C52700D020AE /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE9930E2948C52700D020AE /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1312BEC2293F86CF00807E52 /* canvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = canvasView.swift; sourceTree = "<group>"; };
 		13513C8C293E7C5500C8177D /* SelectVehiculeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectVehiculeViewController.swift; sourceTree = "<group>"; };
 		13513C8E293E832800C8177D /* SelectedTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedTypeViewController.swift; sourceTree = "<group>"; };
+		13541DA129630F6D00B23A25 /* SendReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendReportViewController.swift; sourceTree = "<group>"; };
 		1357711E293240FA00EEBFC9 /* SketchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchViewController.swift; sourceTree = "<group>"; };
 		135A021A2946340C00B64C5E /* SelectTypeBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTypeBViewController.swift; sourceTree = "<group>"; };
 		135A021C2946341A00B64C5E /* SelecVehicleBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelecVehicleBViewController.swift; sourceTree = "<group>"; };
@@ -82,8 +85,6 @@
 		13AB337129461D8C00AAC96F /* ConstatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstatViewModel.swift; sourceTree = "<group>"; };
 		13AB337429461DF200AAC96F /* QrCodeScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeScannerViewController.swift; sourceTree = "<group>"; };
 		13B223462923C4D900258B2E /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		13B223482923CF7000258B2E /* LoadingScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadingScreen.swift; path = "../../../../Chicky-ios/Chicky/Utilities/LoadingScreen.swift"; sourceTree = "<group>"; };
-		13B2234A2923D17C00258B2E /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Alert.swift; path = "../../../../Chicky-ios/Chicky/Utilities/Alert.swift"; sourceTree = "<group>"; };
 		13BD16F5293A2CF000B9EA5F /* CarDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsViewController.swift; sourceTree = "<group>"; };
 		13BD16F7293A3E2800B9EA5F /* Insurance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Insurance.swift; sourceTree = "<group>"; };
 		13BD16F9293A3F7600B9EA5F /* InsuranceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceViewModel.swift; sourceTree = "<group>"; };
@@ -97,6 +98,9 @@
 		13CB408F2927C065006B5665 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
 		13CB40912927C0A4006B5665 /* ChangePassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePassViewController.swift; sourceTree = "<group>"; };
 		13CB40932927CC1E006B5665 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		FAE9930A2948C13600D020AE /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
+		FAE9930C2948C16E00D020AE /* BotResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotResponse.swift; sourceTree = "<group>"; };
+		FAE9930E2948C52700D020AE /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +205,8 @@
 				13BB13D9292BC146004F7FF6 /* Formulaire */,
 				13C330D329293E9000D3DC6B /* HomeViewController.swift */,
 				13AB337429461DF200AAC96F /* QrCodeScannerViewController.swift */,
+				FAE9930A2948C13600D020AE /* ContactView.swift */,
+				FAE9930C2948C16E00D020AE /* BotResponse.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -248,9 +254,8 @@
 		13B223452923C4C700258B2E /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				13B2234A2923D17C00258B2E /* Alert.swift */,
-				13B223482923CF7000258B2E /* LoadingScreen.swift */,
 				13B223462923C4D900258B2E /* Utilities.swift */,
+				FAE9930E2948C52700D020AE /* Alert.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 				13513C90293E832B00C8177D /* Type */,
 				1357711E293240FA00EEBFC9 /* SketchViewController.swift */,
 				1312BEC2293F86CF00807E52 /* canvasView.swift */,
+				13541DA129630F6D00B23A25 /* SendReportViewController.swift */,
 			);
 			path = Formulaire;
 			sourceTree = "<group>";
@@ -354,10 +360,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAE9930D2948C16E00D020AE /* BotResponse.swift in Sources */,
 				13CB40922927C0A4006B5665 /* ChangePassViewController.swift in Sources */,
+				FAE9930B2948C13600D020AE /* ContactView.swift in Sources */,
 				135F10F8291E9D3900FA1108 /* ViewController.swift in Sources */,
 				13513C8F293E832800C8177D /* SelectedTypeViewController.swift in Sources */,
 				13AB337229461D8C00AAC96F /* ConstatViewModel.swift in Sources */,
+				13541DA229630F6D00B23A25 /* SendReportViewController.swift in Sources */,
 				135A0222294652C100B64C5E /* Constat.swift in Sources */,
 				135A021D2946341A00B64C5E /* SelecVehicleBViewController.swift in Sources */,
 				135A02262946546300B64C5E /* carDamageViewModel.swift in Sources */,
@@ -377,12 +386,12 @@
 				13AB337529461DF200AAC96F /* QrCodeScannerViewController.swift in Sources */,
 				13C330D029293A0300D3DC6B /* CarViewController.swift in Sources */,
 				13BD16F8293A3E2800B9EA5F /* Insurance.swift in Sources */,
+				FAE9930F2948C52700D020AE /* Alert.swift in Sources */,
 				13CB408C2927BEB2006B5665 /* SignUpViewController.swift in Sources */,
 				135E82702930EDCB00AADA26 /* CarViewModel.swift in Sources */,
 				135F1111291E9FED00FA1108 /* User.swift in Sources */,
 				13B223472923C4D900258B2E /* Utilities.swift in Sources */,
 				135F10F6291E9D3900FA1108 /* SceneDelegate.swift in Sources */,
-				13B2234B2923D17C00258B2E /* Alert.swift in Sources */,
 				13CB40942927CC1E006B5665 /* ProfileViewController.swift in Sources */,
 				13A3E5BB293E5A7000600EDE /* NewInsurnaceViewController.swift in Sources */,
 				13BD16F6293A2CF000B9EA5F /* CarDetailsViewController.swift in Sources */,
@@ -390,7 +399,6 @@
 				13BD16FA293A3F7600B9EA5F /* InsuranceViewModel.swift in Sources */,
 				13C330D229293E7500D3DC6B /* HistoryViewController.swift in Sources */,
 				135A02242946530100B64C5E /* carDamage.swift in Sources */,
-				13B223492923CF7000258B2E /* LoadingScreen.swift in Sources */,
 				13513C8D293E7C5500C8177D /* SelectVehiculeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

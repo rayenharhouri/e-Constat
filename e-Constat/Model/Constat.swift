@@ -6,21 +6,21 @@
 //
 
 import Foundation
+
 struct Constat: Codable {
-    
     var _id : String
-    var userA : User
-    var userB : User
-    var carDamageA : carDamage
-    var carDamageB : carDamage
-    var carA : Car
-    var carB : Car
-    var InsuranceA : Insurance
-    var InsuranceB : Insurance
+    var userA : String
+    var userB : String
+    var carDamageA : String
+    var carDamageB : String
+    var carA : String
+    var carB : String
+    var InsuranceA : String
+    var InsuranceB : String
     
 
     
-    init(_id : String ,userA: User, userB: User, carDamageA: carDamage, carDamageB: carDamage,carA: Car,carB: Car,InsuranceA: Insurance,InsuranceB : Insurance) {
+    init(_id : String ,userA: String, userB: String, carDamageA: String, carDamageB: String,carA: String,carB: String,InsuranceA: String,InsuranceB : String) {
         self._id = _id
         self.userA = userA
         self.userB = userB
